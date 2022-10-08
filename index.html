@@ -137,13 +137,23 @@
 </div>
 
     <div class="col-sm-9">
-      <h3>About Me</h3>
-      <p> I am a fifth year Ph.D. student in the Computer Science Department at Carnegie Mellon University where I am fortunate to work with <a href="http://www.cs.cmu.edu/~rvinayak/">Rashmi Vinayak</a> as part of the <a href="https://www.pdl.cmu.edu/index.shtml"> Parallel Data Lab. </a> </p>
-      <p> My research interests span from storage systems, cloud computing to machine learning systems. One of my current research focus is to improve the efficiency and performance of cache systems. 
+      <!-- <h3>About Me</h3> -->
+      <p> I am a fifth year Ph.D. student in the Computer Science Department at Carnegie Mellon University where I am fortunate to work with <a href="http://www.cs.cmu.edu/~rvinayak/">Rashmi Vinayak</a> as part of the <a href="https://www.pdl.cmu.edu/index.shtml"> Parallel Data Lab. </a> </p> 
+      <p> I am broadly interested in storage systems, data management, cloud computing and deep learning systems. 
+        I have worked on various cache systems and storage systems to improve the efficiency, performance and reliability. 
+
+        Receently I am looking into using lightweight machine learning to improve storage systems, and the efficiency of deep learning systems. 
+
+<!--         Many of my works draw inspirations from observations in production systems. And some of the works have now been deployed in production at Twitter, Momento, etc. 
+ -->
+
       <!-- I like to build high-performance systems with relaxed fault tolerance and duralbility.  -->
       </p>
-      <p> Previously, I worked with <a href="https://twitter.com/thinkingfish"> Yao Yue </a> at Twitter, <a href="http://ymsir.com/index.html"> Ymir Vigfusson </a> at Emory University, I have also briefly collaborated or worked with <a href="https://www.microsoft.com/en-us/research/people/daberg/"> Daniel Berger </a> and <a href="http://www.mathcs.emory.edu/~lxiong/"> Li Xiong </a>. </p> 
+      <p> Previously, I have worked extensively with <a href="https://twitter.com/thinkingfish"> Yao Yue </a> at Twitter on key-value caches, <a href="http://ymsir.com/index.html"> Ymir Vigfusson </a> at Emory University on storage block I/O cache. 
+        And I have also briefly collaborated or worked with <a href="https://groups.cs.umass.edu/ramesh/"> Ramesh Sitaraman </a> at UMass on content delivery networks, <a href="https://www.microsoft.com/en-us/research/people/daberg/"> Daniel Berger </a> at MSR and <a href="http://www.mathcs.emory.edu/~lxiong/"> Li Xiong</a> and <a href="https://dblp.org/pid/89/9935.html"> Jinfei Liu </a> at Emory University on data management. </p>
+
       <p> I also go by Jason and my Chinese name is 杨骏骋. </p>
+
       <h5>
         <span> Email: juncheny # cs.cmu.edu &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span>
         <span class="float-right"> Find me on &nbsp;
@@ -178,7 +188,7 @@
           <a href="publications/nsdi21-segcache.pdf"> Segcache: memory-efficient and high-throughput DRAM cache for small objects. </a> (Collaboration with Twitter) <br>
           <b> Juncheng Yang </b>, Yao Yue, K. V. Rashmi. <br>
           <i> 18th USENIX Symposium on Networked Systems Design and Implementation (NSDI), 2021 </i><nobr>
-          <a href="https://www.usenix.org/conferences/best-papers"> <nobr style="color:red;display:inline"> wins the community award (one of the best papers)</nobr></a> 
+          <a href="https://www.usenix.org/conferences/best-papers"> <nobr style="color:red;display:inline"> Segcache wins the community award (one of the best papers)</nobr></a> 
           <br> <em>This work has been adopted for production at Twitter. </em> <a href="https://twitter.github.io/pelikan/2021/segcache.html">See a short summary of the work. </a>
         </p></li>
 
@@ -186,8 +196,7 @@
           <a href="publications/osdi20-twemcache.pdf"> A Large Scale Analysis of Hundreds of In-memory Cache Clusters at Twitter. </a> (Collaboration with Twitter) <br>
           <b> Juncheng Yang </b>, Yao Yue, K. V. Rashmi. <br>
           <i> 14th USENIX Symposium on Operating Systems Design and Implementation (OSDI), 2020 </i>
-          <i> Transaction of storage (TOS) 2021 </i>
-          <nobr style="color:red;display:inline;padding:0px;border:0px"> recognized as one of the best storage papers and invited for submission to ACM Transactions on Storage. </nobr>
+          <nobr style="color:red;display:inline;padding:0px;border:0px"> recognized as one of the best storage papers and invited for submission to <a href="publications/tos21-twemcache.pdf"> ACM Transactions on Storage</a>. </nobr>
         </p></li>
 
         <li><p>
@@ -201,9 +210,9 @@
         <a href="publications/sosp21-kangaroo.pdf"> Kangaroo: Caching Billions of Tiny Objects on Flash. </a> (Collaboration with Facebook) <br>
         Sara McAllister, Benjamin Berg, Julian Tutuncu-Macias, <b>Juncheng Yang</b>, Sathya Gunasekar, Jimmy Lu, Nathan Beckmann, Gregory R. Ganger. <br>
         <i> 28th ACM Symposium on Operating Systems Principles (SOSP), 2021 </i>
-        <i> Transaction of storage (TOS) 2022 </i>
+        <br><i> <a href="publications/tos22-kangaroo.pdf"> Extended version</a> (invited submission) - ACM Transaction on storage (TOS) 2022 </i>
         <br>
-        <nobr style="color:red;display:inline;padding:0px;border:0px"> wins best paper award </nobr>
+        <nobr style="color:red;display:inline;padding:0px;border:0px"> Kangaroo wins the best paper award </nobr>
       </p></li>
 
         <li><p>
@@ -218,35 +227,37 @@
           <i> 12th USENIX Workshop on Hot Topics in Cloud Computing (HotCloud), 2020 </i>
         </p></li>
 
-        <li><p>
+<!--         <li><p>
           <a href="publications/"> Skyline Diagram: Efficient Space Partitioning for Skyline Queries. </a> <br>
           Jinfei Liu, <b> Juncheng Yang </b>, Li Xiong, Jian Pei, Jun Luo, Yuzhang Guo, Shuaicheng Ma, and Chenglin Fan. <br>
           <i> IEEE Transactions on Knowledge and Data Engineering (TKDE), 2019 (extended version of 2018 ICDE paper). </i>
         </p></li>
-
+ -->
         <li><p>
           <a href="publications/socc18-Mutant.pdf"> Mutant: Balancing Storage Cost and Latency in LSM-Tree Data Stores. </a> (Collaboration with Quizup) <br>
           Hobin Yoon, <b> Juncheng Yang </b>, Sveinn F. Kristjansson, Steinn E. Sigurdarson, Ymir Vigfusson, Ada Gavrilovska. <br>
           <i> ACM Symposium on Cloud Computing (SoCC), 2018 </i>
         </p></li>
 
-        <li><p>
+<!--         <li><p>
           <a href="publications/tkde18-SecureQuery.pdf"> Secure and Efficient Skyline Queries on Encrypted Data. </a> <br>
           Jinfei Liu, <b> Juncheng Yang </b>, Li Xiong, Jian Pei. <br>
           <i> IEEE Transactions on Knowledge and Data Engineering (TKDE), 2018 (extended version of 2017 ICDE paper). </i>
         </p></li>
-
+ -->
 
         <li><p>
           <a href="publications/icde18-SkylineDiagram.pdf"> Skyline Diagram: Finding the Voronoi Counterpart for Skyline Queries </a> <br>
           Jinfei Liu, <b> Juncheng Yang </b>, Li Xiong, Jian Pei, Jun Luo.  <br>
           <i> IEEE International Conference on Data Engineering (ICDE), 2018. </i>
+          <br> <i> <a href="publications/tkde19-SkylineDiagram.pdf"> Extended version</a> - IEEE Transactions on Knowledge and Data Engineering (TKDE), 2019 </i>
         </p></li>
 
 
         <li><p><a href="publications/icde17-SecureQuery.pdf"> Secure Skyline Queries on Cloud Platform </a> <br>
           Jinfei Liu, <b> Juncheng Yang </b>, Li Xiong, Jian Pei. <br>
           <i> IEEE International Conference on Data Engineering (ICDE), 2017. </i>
+          <br> <i> <a href="publications/tkde18-SecureQuery.pdf"> Extended version</a> - IEEE Transactions on Knowledge and Data Engineering (TKDE), 2018. </i>
         </p></li>
 
 
@@ -254,7 +265,8 @@
         <li><p>
           <a href="publications/systor16-Harmonium.pdf"> Enabling Space Elasticity in Storage Systems. </a> <br>
           Helgi Sigurbjarnarson, Petur Orri Ragnarsson, <b> Juncheng Yang </b>, Ymir Vigfusson, Mahesh Balakrishnan. <br>
-          <i> ACM International Systems and Storage Conference (SYSTOR), 2016 (Best student paper). </i>
+          <i> ACM International Systems and Storage Conference (SYSTOR), 2016 </i>
+          <nobr style="color:red;display:inline"> Best student paper). </nobr>
         </p></li>
 
 
