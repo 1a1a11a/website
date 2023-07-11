@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fetch API Example</title>
+</head>
+<body>
+    Hello World!
+
+  <script>
+    fetch('https://dl.acm.org/doi/10.1145/3127479.3131210', {
+      method: 'GET',
+      headers: {
+      },
+    })
+    .then(response => response.json())
+    .then(data => console.log(data))
+    .catch((error) => {
+      console.error('Error:', error);
+    });
+  </script>
+</body>
+</html>
