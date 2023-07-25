@@ -145,7 +145,9 @@
         <p>I like performing measurement and analysis to get deep understanding of existing systems. My faviourite article is John's <i><a href="https://dl.acm.org/doi/10.1145/3213770"> Alaways measure one-level deeper</a></i>. 
         Many of my works draw inspirations from observations and measurements in production systems. Some of the works have now been deployed in production at Twitter, Momento, etc.</p>
         <p>My works are sponsored by <a href="https://research.facebook.com/fellows/yang-juncheng/"> Meta Fellowship </a> and Google Cloud Research Innovator program.
-           I have received best-paper awards at NSDI'21, SOSP'21, and SYSTOR'16 and is recognized as a rising star in machine learning and systems by MLCommons. </p>
+           I have received best-paper awards at NSDI'21, SOSP'21, and SYSTOR'16. 
+           <!-- and is recognized as a rising star in machine learning and systems by MLCommons.  -->
+          </p>
         
         <p>
         I actively mentor undergraduates and junior Ph.D. students, if you would like to have a chat, feel free to drop me a message. </p>
@@ -179,17 +181,17 @@
           <li> Oct 2022 - Feb 2023 - Invited talk at VMWare, Meta and Oracle on LESSCache: LEarned Segment-Structured cache </li>
           <li> Oct 2022 - Invited to talk about ubiquitous caching at <a href="https://qconsf.com/presentation/oct2022/ubiquitous-caching-journey-building-efficient-distributed-and-process-caches"> QCon SF </a> </li>
           <li> Aug 2022 - Invited talk at Alluxio on JVM offheap caching with Segcache </li>
-          <li> Oct 2021 - Kangaroo has received SOSP <a href="https://www.usenix.org/conferences/best-papers"> best paper award </a> </li>
-          <li> Apr 2021 - Segcache has received NSDI <a href="https://www.usenix.org/conferences/best-papers"> community award (one of the best paper awards) </a> </li>
+          <!-- <li> Oct 2021 - Kangaroo has received SOSP <a href="https://www.usenix.org/conferences/best-papers"> best paper award </a> </li>
+          <li> Apr 2021 - Segcache has received NSDI <a href="https://www.usenix.org/conferences/best-papers"> community award (one of the best paper awards) </a> </li> -->
           <li> Sept 2020 - Gave a keynote talk together with <a href="https://twitter.com/thinkingfish"> Yao Yue </a> at SNIA SDC on <a href="https://www.snia.org/events/storage-developer/2020/agenda"> using PMEM for caching </a> </li>
-          <li> Jan 2020 - Received <a href="https://research.fb.com/blog/2020/01/announcing-the-recipients-of-the-2020-facebook-fellowship-awards/"> Facebook Fellowship </a> on computer storage and efficiency! Thank you, Facebook! </li>
+          <!-- <li> Jan 2020 - Received <a href="https://research.fb.com/blog/2020/01/announcing-the-recipients-of-the-2020-facebook-fellowship-awards/"> Facebook Fellowship </a> on computer storage and efficiency! Thank you, Facebook! </li> -->
         </ul>
       <hr>
 
       <h2> Research Areas and Interests </h2>
         Storage systems and machine learning systems with a focus on efficiency, scalability and robustness: 
         <ul>
-          <li> <b>Efficient</b> and <b>scalable</b> cache management systems [<a href="/publication/osdi20-twemcache.pdf">OSDI'20</a>][<a href="/publication/nsdi21-segcache.pdf">NSDI'21</a>]<a href="/publication/sosp21-kangaroo.pdf">SOSP'21</a>[<a href="/publication/hotos23-qdlp.pdf">HotOS'23</a>][<a href="/publication/sosp23-s3fifo.pdf">SOSP'23</a>][<a href="/publication/nsdi24-sieve.pdf">NSDI'24</a>] </li>
+          <li> <b>Efficient</b> and <b>scalable</b> cache management systems [<a href="/publication/osdi20-twemcache.pdf">OSDI'20</a>][<a href="/publication/nsdi21-segcache.pdf">NSDI'21</a>][<a href="/publication/sosp21-kangaroo.pdf">SOSP'21</a>][<a href="/publication/hotos23-qdlp.pdf">HotOS'23</a>][<a href="/publication/sosp23-s3fifo.pdf">SOSP'23</a>][<a href="/publication/nsdi24-sieve.pdf">NSDI'24</a>] </li>
           <li> <b>Robust</b> and <b>reliable</b> cache/storage management and machine learning systems [<a href="/publication/osdi20-pacemaker.pdf">OSDI'20</a>][<a href="/publication/nsdi22-c2dn.pdf">NSDI'22</a>][<a href="/publication/vldb23-dlrm.pdf">VLDB'23</a>]</li>
           <!-- <li> <b>Sustainable</b> serving and store of <b>unpopular</b> data </li> -->
           <li> New approaches to make machine learning <b>practical</b> for storage systems (machine learning for systems) [<a href="/publication/fast23-glcache.pdf">FAST'23</a>][<a href="/publication/socc17-Mithril.pdf">SOCC'17</a>] </li>
@@ -203,8 +205,8 @@
       <ul>
         <li> <b>SIEVE (NSDI'24)</b>: a cache eviction algorithm simpler than LRU, but more efficient than all state-of-the-art algorithms for key-value and CDN caches.</li>
         <li> <b>S3-FIFO (SOSP'23)</b>: a cache eviction algorithm composed of FIFO queues outperforms state-of-the-art algorithms. </li>
-        <li> <b>Segcache</b> received best-paper award at NSDI'21, and deployed at Twitter and Momento. </li>
-        <li> <b>Kangaroo</b> received best-paper award at SOSP'21. </li>
+        <li> <b>Segcache (NSDI'21)</b> received a best-paper award, and deployed at Twitter and Momento. </li>
+        <li> <b>Kangaroo (SOSP'21)</b> received a best-paper award at SOSP'21. </li>
       </ul>
 
       <hr><br>
@@ -215,7 +217,7 @@
           <a href="/publication/nsdi24-sieve.pdf"> SIEVE: Simple and Efficient Eviction Policy for Turn-key Web Cache Replacement. </a> 
           <!-- [<a href="/slides/hotos23-qdlp.pdf">slides</a>]           -->
           <br>
-          Yazhuo Zhang, <b> Juncheng Yang </b> (corresponding author), Ziyue Qiu, Yao Yue, K. V. Rashmi. <br>
+          Yazhuo Zhang, <b> Juncheng Yang </b> (corresponding author), Yao Yue, Ymir Vigfusson, K. V. Rashmi. <br>
           <i> The 20th USENIX Symposium on Networked Systems Design and Implementation </i> (<b>NSDI</b>), 2024<nobr>
         </p></li>
       </ul>
@@ -240,7 +242,7 @@
 
         <li><p>
           <a href="/publication/fast23-glcache.pdf"> GL-Cache: Group-level learning for efficient and high-performance caching. </a> 
-           [<a href="/slides/fast23-glcache.pdf">slides</a>]          
+           [<a href="/publication/fast23-glcache.pdf">pdf</a>][<a href="/slides/fast23-glcache.pdf">slides</a>]          
           <br>
           <b> Juncheng Yang </b>, Ziming Mao, Yao Yue, K. V. Rashmi. <br>
           <i> The 21st USENIX Conference on File and Storage Technologies </i> (<b>FAST</b>), 2023<nobr>
@@ -248,7 +250,7 @@
 
         <li><p> 
           <a href="/publication/nsdi22-c2dn.pdf"> C2DN: How to Harness Erasure Codes at the Edge for Efficient Content Delivery. </a> (Collaboration with Akamai) 
-          [<a href="/slides/nsdi22-c2dn.pdf">slides</a>]          
+          [<a href="/publication/nsdi22-c2dn.pdf">pdf</a>][<a href="/slides/nsdi22-c2dn.pdf">slides</a>]          
           <br>
           <b> Juncheng Yang </b>, Anirudh Sabnis, Daniel S. Berger, K. V. Rashmi, Ramesh K. Sitaraman <br>
           <i> The 19th USENIX Symposium on Networked Systems Design and Implementation </i> (<b>NSDI</b>), 2022
@@ -256,7 +258,7 @@
 
         <li><p>
           <a href="/publication/nsdi21-segcache.pdf"> Segcache: memory-efficient and high-throughput DRAM cache for small objects. </a> (Collaboration with Twitter) 
-          [<a href="/slides/nsdi21-segcache.pdf">slides</a>]          
+          [<a href="/publication/nsdi21-segcache.pdf">pdf</a>][<a href="/slides/nsdi21-segcache.pdf">slides</a>]          
           <br>
           <b> Juncheng Yang </b>, Yao Yue, K. V. Rashmi. <br>
           <i> The 18th USENIX Symposium on Networked Systems Design and Implementation </i> (<b>NSDI</b>), 2021<br>
@@ -266,7 +268,7 @@
 
         <li><p>
           <a href="/publication/osdi20-twemcache.pdf"> A Large Scale Analysis of Hundreds of In-memory Cache Clusters at Twitter. </a> (Collaboration with Twitter) 
-          [<a href="/slides/osdi20-twemcache.pdf">slides</a>]          
+          [<a href="/publication/osdi20-twemcache.pdf">pdf</a>][<a href="/slides/osdi20-twemcache.pdf">slides</a>]          
           <br>
           <b> Juncheng Yang </b>, Yao Yue, K. V. Rashmi. <br>
           <i> The 14th USENIX Symposium on Operating Systems Design and Implementation </i> (<b>OSDI</b>), 2020
@@ -294,7 +296,7 @@
 
       <li><p>
         <a href="/publication/vldb23-dlrm.pdf"> Efficient Fault Tolerance for Recommendation Model Training via Erasure Coding. </a> 
-          <!-- [<a href="/slides/eurosys23-frozenhot.pdf">slides</a>]           -->
+          <!-- [<a href="/publication/vldb23-dlrm.pdf">pdf</a>]           -->
         <br>
         Tianyu Zhang, Kaige Liu, Jack Kosaian, <b>Juncheng Yang</b>, K. V. Rashmi. <br>
         <i> 49th International Conference on Very Large Databases </i> (<b>VLDB</b>), 2023<nobr>
@@ -302,7 +304,7 @@
 
       <li><p> 
         <a href="/publication/sosp21-kangaroo.pdf"> Kangaroo: Caching Billions of Tiny Objects on Flash. </a> (Collaboration with Facebook) 
-          [<a href="/slides/sosp21-kangaroo.pdf">slides</a>]          
+          [<a href="/publication/sosp21-kangaroo.pdf">pdf</a>][<a href="/slides/sosp21-kangaroo.pdf">slides</a>]          
         <br>
         Sara McAllister, Benjamin Berg, Julian Tutuncu-Macias, <b>Juncheng Yang</b>, Sathya Gunasekar, Jimmy Lu, Nathan Beckmann, Gregory R. Ganger. <br>
         <i> 28th ACM Symposium on Operating Systems Principles </i> (<b>SOSP</b>), 2021
@@ -313,40 +315,50 @@
 
         <li><p>
           <a href="/publication/osdi20-pacemaker.pdf"> PACEMAKER: Avoiding HeART Attacks in Storage Clusters with Disk-adaptive Redundancy. </a> (Collaboration with Google and Netapp) 
-          [<a href="/slides/osdi20-pacemaker.pdf">slides</a>]          
+          [<a href="/publication/osdi20-pacemaker.pdf">pdf</a>][<a href="/slides/osdi20-pacemaker.pdf">slides</a>]          
           <br>
           Saurabh Kadekodi, Francisco Maturana, Suhas Jayaram Subramanya, <b> Juncheng Yang </b>, K. V. Rashmi, Gregory R. Ganger. <br>
           <i> 14th USENIX Symposium on Operating Systems Design and Implementation </i> (<b>OSDI</b>), 2020
         </p></li>
 
         <li><p>
-          <a href="/publication/hotcloud20-cachewarmup.pdf"> When is the Cache Warm? Manufacturing a Rule of Thumb. </a> (Collaboration with Akamai and CloudPhysics) <br>
+          <a href="/publication/hotcloud20-cachewarmup.pdf"> When is the Cache Warm? Manufacturing a Rule of Thumb. </a> (Collaboration with Akamai and CloudPhysics) 
+          [<a href="/publication/hotcloud20-cachewarmup.pdf">pdf</a>] 
+          <br>
           Lei Zhang, <b> Juncheng Yang </b>, Anna Blasiak, Mike McCall, Ymir Vigfusson. <br>
           <i> 12th USENIX Workshop on Hot Topics in Cloud Computing </i> (<b>HotCloud</b>), 2020
         </p></li>
 
         <li><p>
-          <a href="/publication/socc18-Mutant.pdf"> Mutant: Balancing Storage Cost and Latency in LSM-Tree Data Stores. </a> (Collaboration with Quizup) <br>
+          <a href="/publication/socc18-Mutant.pdf"> Mutant: Balancing Storage Cost and Latency in LSM-Tree Data Stores. </a> (Collaboration with Quizup) 
+          [<a href="/publication/socc18-Mutant.pdf">pdf</a>]
+          <br>
           Hobin Yoon, <b> Juncheng Yang </b>, Sveinn F. Kristjansson, Steinn E. Sigurdarson, Ymir Vigfusson, Ada Gavrilovska. <br>
           <i> ACM Symposium on Cloud Computing </i> (<b>SoCC</b>), 2018
         </p></li>
 
         <li><p>
-          <a href="/publication/icde18-SkylineDiagram.pdf"> Skyline Diagram: Finding the Voronoi Counterpart for Skyline Queries </a> <br>
+          <a href="/publication/icde18-SkylineDiagram.pdf"> Skyline Diagram: Finding the Voronoi Counterpart for Skyline Queries </a> 
+          [<a href="/publication/icde18-SkylineDiagram.pdf">pdf</a>]
+          <br>
           Jinfei Liu, <b> Juncheng Yang </b>, Li Xiong, Jian Pei, Jun Luo.  <br>
           <i> IEEE International Conference on Data Engineering </i> (<b>ICDE</b>), 2018.
           <br> <i> <a href="/publication/tkde19-SkylineDiagram.pdf"> Extended version</a> - IEEE Transactions on Knowledge and Data Engineering (TKDE), 2019 </i>
         </p></li>
 
 
-        <li><p><a href="/publication/icde17-SecureQuery.pdf"> Secure Skyline Queries on Cloud Platform </a> <br>
+        <li><p><a href="/publication/icde17-SecureQuery.pdf"> Secure Skyline Queries on Cloud Platform </a> 
+          [<a href="/publication/icde17-SecureQuery.pdf">pdf</a>]
+          <br>
           Jinfei Liu, <b> Juncheng Yang </b>, Li Xiong, Jian Pei. <br>
           <i> IEEE International Conference on Data Engineering </i> (<b>ICDE</b>), 2017.
           <br> <i> <a href="/publication/tkde18-SecureQuery.pdf"> Extended version</a> - IEEE Transactions on Knowledge and Data Engineering (TKDE), 2018. </i>
         </p></li>
 
         <li><p>
-          <a href="/publication/systor16-Harmonium.pdf"> Enabling Space Elasticity in Storage Systems. </a> <br>
+          <a href="/publication/systor16-Harmonium.pdf"> Enabling Space Elasticity in Storage Systems. </a> 
+          [<a href="/publication/systor16-Harmonium.pdf">pdf</a>]
+          <br>
           Helgi Sigurbjarnarson, Petur Orri Ragnarsson, <b> Juncheng Yang </b>, Ymir Vigfusson, Mahesh Balakrishnan. <br>
           <i> ACM International Systems and Storage Conference</i> (<b>SYSTOR</b>), 2016 <br>
           <nobr style="color:red;display:inline"> Best student paper </nobr>
@@ -358,11 +370,12 @@
 
       <a name="students"><h2>Mentored Students</h2></a>
         <ul> 
-          <li> Jonathan Chiu (2021-2023) </li>
-          <li> Ziming Mao (2022) </li>
-          <li> Bob Chen (2023) </li>
-          <li> Frank Chen (2023) </li>
-          <li> Emily Zhang (2023) </li>
+          <li> Jonathan Chiu (2021-2023 Carnegie Mellon) </li>
+          <li> Ziming Mao (2022 Yale) </li>
+          <li> Yazhuo Zhang (2022-2023 Emory) </li>
+          <li> Bob Chen (2023 Carnegie Mellon) </li>
+          <li> Frank Chen (2023 Carnegie Mellon) </li>
+          <li> Emily Zhang (2023 Carnegie Mellon) </li>
         </ul>
       <hr><br>
         
@@ -394,7 +407,7 @@
 
       <a name="teaching"><h2>Teaching</h2></a>
         <ul>
-          <li> 2022 Guest lecturer for 15513 Introduction to Computer Systems (ICS) </li>
+          <li> 2022 Guest lecturer for 15513 Introduction to Computer Systems </li>
           <li> 2022 TA 15712 Advanced Operating Systems and Distributed Systems </li>
           <li> 2020 TA 18746 Storage Systems </li>
           <li> 2017 Guest lecturer for CS584 Advanced Computer System  </li>
