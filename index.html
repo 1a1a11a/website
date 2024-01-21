@@ -210,11 +210,9 @@
           <h2>News</h2>
         </a>
         <ul>
-          <li> 01/2024 - <a href="https://sievecache.com">SIEVE</a> reached the top on HN (twice) and Lobste.rs,
-            featured on <a href="https://tldr.tech/tech/2024-01-04">TLDR newletter</a> and discussed in a <a
-              href="https://brooker.co.za/blog/2023/12/15/sieve.html">a blog post by Marc</a>. An independent
-            implementation and review
-            can be found at <a target="_blank" href="https://github.com/scalalang2/golang-fifo">Golang-fifo</a>. </li>
+          <li> 01/2024 - <a href="https://sievecache.com">SIEVE</a> was featured on <a href="https://tldr.tech/tech/2024-01-04">TLDR newletter</a> and discussed in a <a
+              href="https://brooker.co.za/blog/2023/12/15/sieve.html">a blog post by Marc</a>. Over a dozen open-source libraries have been implemented in Golang, Rust, Python, JavaScript, Ruby, Swift, and Zig. 
+            </li>
           <li> 12/2023 - <a href="https://s3fifo.com">S3-FIFO</a> will be discussed in <a target="_blank"
               href="https://charap.co/winter-2023-2024-reading-group-papers/">Aleksey's Online Reading Group</a>, it has
             been covered by blogs in <a target="_blank"
@@ -223,8 +221,7 @@
             and <a target="_blank" href="https://tiisys.com/blog/2023/12/06/post-130211/2/">Japanese</a>, used in course
             reading materials at <a target="_blank"
               href="https://docs.google.com/document/d/1XX5ksgLVnkPE-dfeVDZPlv5NMbgxJqWmi13YEQt1t1o/edit#heading=h.k6znr7t8urvp">
-              UIUC CS525</a>, featured in <a target="_blank"
-              href="https://www.pointer.io/archives/0a85ffc4cd/">pointer.io newsletter</a> and
+              UIUC CS525</a>, and
             implemented in more than a dozen of open-source libraries and systems, e.g., <a target="_blank"
               href="https://github.com/redpanda-data/redpanda/pull/14759">Redpanda</a>,
             <a target="_blank"
@@ -299,24 +296,30 @@
         <h2> Research Highlights </h2>
         <ul>
           <li> <b>SIEVE (NSDI'24)</b>: the first cache eviction algorithm <b>simpler</b> than LRU but yet more
-            <b>effective</b> than
-            state-of-the-art algorithms for web caches.
+            <b>effective</b> than state-of-the-art algorithms for web caches. <b>Implemented in many open-source libraries</b>,                   <a target="_blank" href="https://github.com/opencoff/go-sieve">Golang</a>,
+            <a target="_blank" href="https://github.com/mfleming/sieve">Python</a>, 
+            <a target="_blank" href="https://github.com/kurtextrem/js-sieve">JavaScript</a>,
+            <a target="_blank" href="https://crates.io/crates/sieve-cache">Rust</a>, 
+            <a target="_blank" href="https://github.com/linux-china/sieve-cache">Java</a>,
+            <a target="_blank" href="https://github.com/nixberg/sieve-swift">Swift</a>,
+            <a target="_blank" href="https://github.com/thelibrarian/sieve_cache">Ruby</a>, 
+            <a target="_blank" href="https://github.com/lost22git/sieve_cache">Nim</a>, and
+            <a target="_blank" href="https://github.com/tensorush/zig-sieve">Zig</a>.
+
           </li>
           <li> <b>S3-FIFO (SOSP'23)</b>: a simple and scalable cache eviction algorithm composed of only FIFO queues.
-            <b>Implemented or deployed at companies</b> including Google, VMware and Redpanda. It has also
-            been implemented in popular open-source libraries, including
+            <b>Implemented or deployed at companies</b> including Google, VMware and Redpanda, and open-source libraries, including
             <a target="_blank" href="https://github.com/redpanda-data/redpanda/pull/14759">Redpanda</a>,
-            <a target="_blank" href="https://github.com/surrealdb/surrealkv/pull/4">surrealkv</a>,
             <a target="_blank" href="https://github.com/maypok86/otter">otter</a>,
+            <!-- <a target="_blank" href="https://github.com/surrealdb/surrealkv/pull/4">surrealkv</a>, -->
+            <a target="_blank" href="https://crates.io/crates/s3-fifo">S3-FIFO Rust</a>,
             <a target="_blank"
-              href="https://github.com/falsandtru/spica/commit/b44c6cc65e9cd87f6cc292ea6a69a3cf18f93011">spica</a>,
-            and many other libraries, such as
+              href="https://github.com/falsandtru/spica/blob/master/src/s3-fifo.ts">spica</a>. 
+            <!-- , such as
             <a target="_blank" href="https://github.com/scalalang2/golang-fifo">Golang</a>,
             <a target="_blank" href="https://github.com/cmcaine/s3fifo.py">Python</a>,
-            <a target="_blank" href="https://github.com/wfraser/s3fifo">Rust 1</a>,
-            <a target="_blank" href="https://github.com/willb0/s3-fifo-rs">Rust 2</a>,
             <a target="_blank" href="https://github.com/thelamon/s3fifo_cpp">C++ 1</a>,
-            <a target="_blank" href="https://github.com/Ilistratov/S3-FIFO">C++ 2</a>.
+            <a target="_blank" href="https://github.com/Ilistratov/S3-FIFO">C++ 2</a>. -->
           </li>
           <li> <b>GL-Cache (FAST'23)</b>: my exploration on bringing low-overhead machine learning to caching. </li>
           <li> <b>Segcache (NSDI'21)</b> received a <b>best-paper award, and deployed at Twitter and Momento</b>. </li>
@@ -348,10 +351,22 @@
                 blog coverage: <a target="_blank" href="https://brooker.co.za/blog/2023/12/15/sieve.html">Marc from
                   AWS</a>, <a target="_blank"
                   href="https://medium.com/rate-labs/%EC%96%B4%EB%96%A4-%EC%86%8C%EA%B0%80-%EC%9D%BC%EC%9D%84-%EB%8D%94-%EC%9E%98%ED%95%A9%EB%8B%88%EA%B9%8C-fifo%EA%B0%80-lru%EB%B3%B4%EB%8B%A4-%EB%82%AB%EC%8A%B5%EB%8B%88%EB%8B%A4%EC%9A%94-1a49b9060ce4">
-                  blog post</a> in Korean.
+                  blog post</a> in Korean. 
                 <br>
-                Independent implementations: <a target="_blank"
-                  href="https://github.com/scalalang2/golang-fifo">golang-fifo</a>
+                Independent implementations and evaluation: <a target="_blank"
+                  href="https://github.com/scalalang2/golang-fifo">golang-fifo</a>, use in <a target="_blank" href="https://github.com/DNSCrypt/dnscrypt-proxy/commit/f2484f5bd528d9e831bc0f6479ae8530d4596c4c">DNSCrypt</a>. 
+                <br>
+                Open-source libraries (not an extensive list): 
+                  <a target="_blank" href="https://github.com/opencoff/go-sieve">Golang</a>,
+                <a target="_blank" href="https://github.com/mfleming/sieve">Python</a>, 
+                <a target="_blank" href="https://github.com/kurtextrem/js-sieve">JavaScript</a>,
+                <a target="_blank" href="https://crates.io/crates/sieve-cache">Rust</a>, 
+                <a target="_blank" href="https://github.com/linux-china/sieve-cache">Java</a>,
+                <a target="_blank" href="https://github.com/nixberg/sieve-swift">Swift</a>,
+                <a target="_blank" href="https://github.com/thelibrarian/sieve_cache">Ruby</a>, 
+                <a target="_blank" href="https://github.com/lost22git/sieve_cache">Nim</a>, 
+                <a target="_blank" href="https://github.com/tensorush/zig-sieve">Zig</a>.
+
               </nobr>
 
             </p>
@@ -412,6 +427,13 @@
                   newsletters <a target="_blank" href="https://www.pointer.io/archives/0a85ffc4cd/">[1]</a>,
                   <a target="_blank" href="https://leahneukirchen.org/trivium/2023-09">[2]</a>
                   .
+                  <br>
+                  Open-source libraries (not an extensive list): 
+                  <a target="_blank" href="https://crates.io/crates/s3-fifo">Rust</a>, 
+                  <a target="_blank" href="https://github.com/maypok86/otter">Golang</a>,
+                  <a target="_blank" href="https://github.com/falsandtru/spica/blob/master/src/s3-fifo.ts">JavaScript</a>,
+                  <a target="_blank" href="https://github.com/cmcaine/s3fifo.py">Python</a>,
+                  <a target="_blank" href="https://github.com/Ilistratov/S3-FIFO">C++</a>.
                 </nobr>
             </p>
           </li>
@@ -466,10 +488,14 @@
               <i> The 18th USENIX Symposium on Networked Systems Design and Implementation </i> (<b>NSDI</b>), 2021<br>
               <a target="_blank" href="https://www.usenix.org/conferences/best-papers">
                 <nobr style="color:red;display:inline"> Segcache wins the community award (one of the best papers)
-                </nobr>
               </a>
               <br> <em>This work has been adopted for production at Twitter. </em> <a
-                href="https://twitter.github.io/pelikan/2021/segcache.html">See a short summary of the work. </a>
+                href="https://twitter.github.io/pelikan/2021/segcache.html">See a short summary of the work. </a><br>
+              Open-source systems and libraries: 
+              <a target="_blank" href="https://github.com/pelikan-io/pelikan">Pelikan</a>,
+              <a target="_blank" href="https://crates.io/crates/segcache">Rust crate</a>,
+            </nobr>
+               
             </p>
           </li>
 
