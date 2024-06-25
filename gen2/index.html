@@ -16,7 +16,7 @@
 
 
   <meta name="description"
-    content="I am an Assistant Professor at School of Engineering and Applied Science, Harvard University" />
+    content="I am an Assistant Professor at School of Applied Science and Engineering, Harvard University" />
   <meta name="keywords" content="Juncheng, Yang" />
   <meta http-equiv="author" content="Juncheng Yang" />
 
@@ -27,6 +27,13 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
     integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
   <script src="https://kit.fontawesome.com/a670f411c7.js"></script>
+
+  <style>
+    .fakeimg {
+      height: 200px;
+      background: #aaa;
+    }
+  </style>
 
   <script>
     function show_sec(id) {
@@ -44,15 +51,6 @@
       for (var i = 0; i < id_list.length; i++) {
         document.getElementById(id_list[i]).style.display = "block";
       }
-    }
-
-    function load_content(pagename, sec_id) {
-      fetch(pagename)
-        .then(response => response.text())
-        .then(data => {
-          document.getElementById(sec_id).innerHTML = data;
-        })
-        .catch(error => console.error('Error loading content:', error));
     }
   </script>
 
@@ -76,7 +74,7 @@
           <!-- this changes the nav to a scroll dropdown finishes -->
           <ul class="navbar-nav">
             <li class="nav-item nav-justified"> <a class="nav-link mx-0 mx-xl-2"
-                onclick="show_secs(['intro', 'news', 'recruiting', 'researchInterest', 'researchHigh', 'publication', 'student', 'teaching', 'talk', 'service', 'award', 'bio', 'open-source']);">Home</a>
+                onclick="show_secs(['intro', 'news', 'recruiting', 'researchInterest', 'researchHigh', 'publication', 'student', 'teaching', 'talk', 'service', 'award', 'bio', 'open-source']);">Homepage</a>
             </li>
             <li class="nav-item nav-justified">
               <a class="nav-link mx-0 mx-xl-2" onclick="show_secs(['researchInterest', 'researchHigh']);">
@@ -126,7 +124,7 @@
         <h1>Juncheng Yang</h1>
         <h2>Assistant Professor (Starting Fall 2025)</h2>
         <p>
-        <h2>School of Engineering and Applied Science, Harvard University</h2>
+        <h2>School of Applied Science and Engineering, Harvard University</h2>
         </p>
         <p class="mb-4">
         <h4><a href="mailto:juncheng@g.harvard.edu">juncheng # g.harvard.edu</a></h4>
@@ -156,11 +154,11 @@
       <p>I am broadly interested in <b>storage systems</b>, <b>data management</b> and <b>machine learning
           systems</b> with particular interests on <b>system measurement, workload analysis, and sustainable system
           design</b>.
-        I like performing measurement and analysis to get deep understanding of existing systems.
       </p>
       <!-- On the data management and storage system side, I have worked on various cache systems (block, key-value, CDN) and large-scale distributed storage systems to improve the efficiency, performance and reliability. -->
       <!-- On the machine learning system side, I am interested in applying lightweight machine learning to improve the efficiency of storage systems (ML for system), and building efficient deep learning systems (system for ML).  -->
 
+      <!-- I like performing measurement and analysis to get deep understanding of existing systems. -->
       <!-- My faviourite article is John's <i><a target="_blank" href="https://dl.acm.org/doi/10.1145/3213770"> Always measure one-level deeper</a></i>. -->
       <!-- Many of my works draw inspirations from observations and measurements in production systems. -->
 
@@ -198,7 +196,7 @@
     <!-- <h5><a target="_blank" href="CV.pdf"> My CV </a></h5> <hr> -->
 
     <div class="container section" id="news">
-      <h2>News <font size="3">[<a onclick="load_content('news.html', 'news')">all news</a>]</font>
+      <h2>News <font size="3">[<a href="news.html">all news</a>]</font>
       </h2>
       <ul>
         <li>
@@ -322,30 +320,25 @@
       <h2>Ph.D. Students</h2>
 
       <h2>Master Students</h2>
-      <ul>
-        <li> Frank Chen (2023 Carnegie Mellon University): won the second place in ACM student research competition
-        </li>
-      </ul>
+
 
       <h2>Undergraduate Students</h2>
-      <ul>
-        <li> Bob Chen (2023-2024 Carnegie Mellon University) </li>
-        <li> Helen Wang (2024 Carnegie Mellon University) </li>
-        <!-- <li> Haocheng Xia (2023 Zhejiang University) </li> -->
-      </ul>
+
       <h2>Alumni</h2>
+
+      <h2>Mentored Students at CMU</h2>
+      </a>
       <ul>
         <li> Jonathan Chiu (2021-2023 Carnegie Mellon University) </li>
-        <li> Ziming Mao (2022 Yale University): published a paper at FAST'23 </li>
+        <li> Ziming Mao (2022 Yale University): a paper at FAST'23 </li>
+        <li> Yazhuo Zhang (2022-2023 Emory University): a paper at NSDI'24 </li>
+        <li> Ziyue Qiu (2023 Carnegie Mellon University): a paper at Eurosys'23 </li>
+        <li> Frank Chen (2023 Carnegie Mellon University): second place in ACM student research competition </li>
+        <li> Bob Chen (2023 Carnegie Mellon University) </li>
         <li> Emily Zhang (2023 Carnegie Mellon University) </li>
         <li> YiYan Zhai (2023 Carnegie Mellon University)</li>
         <li> Parinay Chauhan (2023 IIT)</li>
       </ul>
-      <!-- <h2>Mentored Students at CMU</h2>
-      <ul>
-        <li> Yazhuo Zhang (2022-2023 Emory University): a paper at NSDI'24 </li>
-        <li> Ziyue Qiu (2023 Carnegie Mellon University): a paper at Eurosys'23 </li>
-      </ul> -->
       <hr>
     </div>
 
@@ -714,7 +707,6 @@
     </div>
 
     <div class="container section" id="talk">
-      <h2>Talks</h2>
       <ul>
         <li>
           <span class="paper-name"> Simple Scalable Caching with Three Static FIFO Queues. </span>
@@ -753,7 +745,7 @@
           </ul>
         </li>
       </ul>
-      <hr>
+
     </div>
 
     <div class="container section" id="open-source">
@@ -775,11 +767,9 @@
     </div>
 
     <div class="container section" id="bio">
-      <h2>Bio</h2>
       <p>
         Juncheng Yang is an Assistant Professor in the School of Engineering and Applied Science at Harvard University.
-        He received his Ph.D. in Computer Science from Carnegie Mellon University in 2024, His research interests
-        broadly cover the efficiency, performance, reliability, and sustainability of large-scale
+        His research interests broadly cover the efficiency, performance, reliability, and sustainability of large-scale
         data systems.
       </p>
       <p>
@@ -792,7 +782,7 @@
         His work, Segcache, has been adopted for production at Twitter and Momento. The two eviction algorithms he
         designed (S3-FIFO, SIEVE) have been adopted for production at Google, VMware, Redpanda, and several others, with
         over 20 open-source libraries available on GitHub.
-        Moreover, the open-source cache simulation library he created, libCacheSim, has been used by almost 100 research
+        Moreover, the open-source cache simulation library libCacheSim he created has been used by almost 100 research
         institutes and companies.
       </p>
       <hr>
@@ -829,19 +819,19 @@
 
 
   <!-- Cloudflare Web Analytics -->
-  <script defer src='https://static.cloudflareinsights.com/beacon.min.js'
-    data-cf-beacon='{"token": "73060116f5984852acd9226e1c20e0e0"}'></script>
+  <!-- <script defer src='https://static.cloudflareinsights.com/beacon.min.js'
+    data-cf-beacon='{"token": "73060116f5984852acd9226e1c20e0e0"}'></script> -->
   <!-- End Cloudflare Web Analytics -->
 
 
   <!-- Start of StatCounter Code for Default Guide -->
-  <script type="text/javascript">
+  <!-- <script type="text/javascript">
     var sc_project = 10384898;
     var sc_invisible = 1;
     var sc_security = "2d9d418e";
     var scJsHost = (("https:" == document.location.protocol) ? "https://secure." : "http://www.");
     document.write("<sc" + "ript type='text/javascript' src='" + scJsHost + "statcounter.com/counter/counter.js'></" + "script>");
-  </script>
+  </script> -->
   <!-- End of StatCounter Code for Default Guide -->
 
 
