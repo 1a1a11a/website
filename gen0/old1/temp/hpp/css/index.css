@@ -1,0 +1,243 @@
+*{
+	padding: 0px;
+	margin: 0px;
+
+}
+body{
+
+/*	background-image:url(../image/bg3.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;*/
+}
+
+.container{
+	margin-left:auto;
+	margin-right: auto;  
+	width: 100%;
+	margin-top: 60px;
+	background-image:url(../image/bg3.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+/*#logo{
+	text-align: center;
+	height: 240px;	
+}*/
+.header li{
+	display: inline;
+
+}
+
+
+.headerGlobal{
+	height:45px;
+	width:100%;
+	background-color: #FFFFCC;
+	padding: 2px;
+	position:fixed;
+	opacity: 0.8;
+	z-index: 100;
+
+}
+.headerGlobal img{
+	float:left;
+	vertical-align: center;
+	width:173px;
+	height:40px; 
+	margin-left:5%;
+	border:3px solid brown;
+/*	border-radius: 50px;*/
+/*	opacity: 0.5;
+*/
+}
+
+.headerGlobal ul{
+	vertical-align: center;
+	margin-right: 8%;
+
+/*	position: absolute;
+	height:80px;
+	top:50%;
+	margin-top: -40px;*/
+/*	margin:2% 0% 2% 0%;
+	padding:5% 5%;*/
+}
+
+
+.headerGlobal li{
+	float:right;
+	font-weight: 600;
+	font-size: 1.6em; 
+	font-family:  serif, sans-serif,Times, courier;
+	display: inline-block;
+	line-height:45px;
+	color: brown;
+	vertical-align: middle;
+
+}
+/*.headerGlobal a::after{
+	content:"  |  ";
+	white-space: pre;
+	font-size: 1.2em; 
+	line-height:72px;
+	vertical-align: middle;
+ }*/
+
+.headerGlobal a{
+/*	margin: 12px 0;
+	padding:-12px 0;*/
+	display: inline-block;
+	min-width: 10px;
+	border-radius: 30px;
+
+}
+.headerGlobal a:link{
+	font-size: 1.0em;
+	text-decoration: none;
+	opacity: 0.5;
+	color:brown;
+}
+.headerGlobal a:visited{
+	font-size: 1.0em;
+	text-decoration: none;
+
+	color:#990033;
+}
+.headerGlobal a:hover{
+	font-size: 1.2em;	
+	opacity: 2;
+	background-color: orange;
+	transition:background-color 2s;
+	-moz-transition:background-color 2s;
+	-webkit-transition:background-color 2s;
+	-a-transition:background-color 2s;
+
+	/*background-color:orange;*/
+	/*text-decoration: none;*/
+}
+.headerGlobal a:active{
+	font-size: 1.0em;
+	background-color: #CCFF66;
+}
+
+
+.footer{
+	clear: both;
+	/*position:relative;
+	bottom: 20px;
+	width:80%;*/
+	text-align: center;
+	font-size: 0.8em;
+
+
+}
+
+.clean{
+	clear:both;
+}
+
+
+
+.main{
+	margin:0 20px 45px 0;
+	padding: 8px 60px 60px 60px;
+	position: relative;
+
+	margin-left:auto;
+	margin-right: auto;  
+	width: 1160px;
+	margin-top: 60px;
+	background-image:url(../image/bg3.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+
+}
+
+.main p{
+/*	text-indent: 2em;*/
+	position: relative;
+	left: 30px;
+	line-height: 1.08em;
+	padding:0.12em 0 0.6em 0; 
+	font-size: 1.08em;
+	font-family: Helvetica, arial, sans-serif, serif, Courier, Times;
+	text-align: justify;
+}
+
+.main a:link{
+	color:black;
+
+}
+
+#photo{
+	float: left;
+	margin-right: 60px;
+	margin-bottom: 45px;
+	width:360px;
+	height: auto;
+	border-radius: 50px;
+
+}
+
+.mainLeft h3, .mainRight h3{
+	text-align: center;
+	font-family: Courier, serif, times;
+	font-size: 1.2em;
+	padding-bottom: 12px;
+
+}
+
+
+
+
+.mainLeft, .mainRight{
+	width:480px;
+	min-height: 200px;
+	padding: 12px 12px 5px 12px;
+	margin:20px 30px ;
+	background-color: #F8F8F8;
+	border:3px solid green;
+	border-radius: 24px;
+	box-shadow: 20px 20px 60px #888888;
+	font: 0.8em Courier, serif, times;
+	vertical-align: top;
+}
+.mainLeft{
+	float: left;
+/*	-webkit-transform:skew(-6deg,6deg);
+	-ms-transform:skew(6deg,-6deg);
+	-moz-transform:skew(6deg,-6deg);
+	-o-transform:skew(6deg,-6deg);*/
+	-webkit-transform:rotate(6deg);
+	-moz-transform:rotate(6deg);
+	-ms-transform:rotate(6deg);
+	-o-transform:rotate(6deg);
+
+
+}
+.mainRight{
+	float: right;
+/*	-webkit-transform:skew(6deg,-6deg);
+	-ms-transform:skew(6deg,-6deg);
+	-moz-transform:skew(6deg,-6deg);
+	-o-transform:skew(6deg,-6deg);*/
+	-webkit-transform:rotate(-6deg);
+	-moz-transform:rotate(-6deg);
+	-ms-transform:rotate(-6deg);
+	-o-transform:rotate(-6deg);
+
+}
+.mainRight h3, .mainLeft h3{
+	font-size: 1.8em;
+	font-family: Helvetica, arial, sans-serif, serif, Courier, Times;
+}
+.mainRight li, .mainLeft li{
+	padding-left: 20px;
+	font-size: 1.2em;
+	list-style-position: inside; 
+	font-family: Helvetica, arial, sans-serif, serif, Courier, Times;
+	line-height: 1.6em;
+
+
+}

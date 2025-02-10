@@ -1,0 +1,250 @@
+*{
+	padding: 0px;
+	margin: 0px;
+
+}
+body{/*
+	min-width: 1260px;
+	overflow-x: hidden;*/
+	background-color: #E2EBF3;
+}
+.container{
+	margin-left:auto;
+	margin-right: auto;  
+	width: 1160px;
+	margin-top: 60px;
+}
+
+
+
+.headerGlobal{
+	height:45px;
+	width:100%;
+	background-color: #FFFFCC;
+	padding: 2px;
+	position:fixed;
+	opacity: 0.8;
+	z-index: 100;
+
+}
+.headerGlobal img{
+	float:left;
+	vertical-align: center;
+	width:173px;
+	height:40px; 
+	margin-left:5%;
+	border:3px solid brown;
+/*	border-radius: 50px;*/
+/*	opacity: 0.5;
+*/
+}
+
+.headerGlobal ul{
+	vertical-align: center;
+	margin-right: 8%;
+
+}
+
+
+.headerGlobal li{
+	float:right;
+	font-weight: 600;
+	font-size: 1.6em; 
+	font-family:  Mural Script, Alako-Bold, serif, sans-serif,Times, courier;
+	display: inline-block;
+	line-height:45px;
+	color: brown;
+	vertical-align: middle;
+
+}
+
+
+.headerGlobal a{
+	display: inline-block;
+	min-width: 10px;
+	border-radius: 30px;
+
+}
+.headerGlobal a:link{
+	font-size: 1.0em;
+	text-decoration: none;
+	opacity: 0.5;
+	color:brown;
+}
+.headerGlobal a:visited{
+	font-size: 1.0em;
+	text-decoration: none;
+
+	color:#990033;
+}
+.headerGlobal a:hover{
+	font-size: 2.0em;	
+	opacity: 2;
+	background-color: orange;
+	transition:background-color 2s, font-size 1s;
+	-moz-transition:background-color 2s, font-size 1s;
+	-webkit-transition:background-color 2s, font-size 1s;
+	-a-transition:background-color 2s, font-size 1s;
+
+	/*background-color:orange;*/
+	/*text-decoration: none;*/
+}
+.headerGlobal a:active{
+	font-size: 1.0em;
+	background-color: #CCFF66;
+}
+
+
+.footer{
+	clear: both;
+	text-align: center;
+	font-size: 0.8em;
+
+
+}
+
+.clean{
+	clear:both;
+}
+
+
+
+.main{
+	margin-bottom:20px;
+	padding: 20px 96px 38px 96px;
+	position: relative;
+	font-family: Helvetica, arial, sans-serif, serif, Courier, Times;
+}
+
+.main p{
+	text-indent: 2em;
+	position: relative;
+	line-height: 1.08em;
+	padding:0em 0 0.6em 0; 
+	font-size: 1.08em;
+	font-family:   Helvetica, arial, sans-serif, serif, Courier, Times;
+	text-align: justify;
+}
+.main h2{
+	font-family: Snoopy, Mural Script, sans-serif;
+	font-size: 2em;
+
+}
+.main h3{
+	font-family: sans-serif;
+
+}
+.main a:link{
+	color:black;
+
+}
+
+#photo{
+	float: left;
+	margin-right: 60px;
+	margin-bottom: 38px;
+	width:380px;
+	height: auto;
+	border-radius: 50px;
+
+}
+
+
+
+
+
+
+
+
+.mainLeft, .mainRight{
+	width:480px;
+	min-height: 200px;
+	padding: 12px 12px 5px 12px;
+	margin:20px 30px ;
+	background-color: #F8F8F8;
+	border:3px solid green;
+	border-radius: 24px;
+	box-shadow: 20px 20px 60px #888888;
+	vertical-align: top;
+}
+.mainLeft{
+	float: left;
+/*	-webkit-transform:skew(-6deg,6deg);
+	-ms-transform:skew(6deg,-6deg);
+	-moz-transform:skew(6deg,-6deg);
+	-o-transform:skew(6deg,-6deg);*/
+	-webkit-transform:rotate(6deg);
+	-moz-transform:rotate(6deg);
+	-ms-transform:rotate(6deg);
+	-o-transform:rotate(6deg);
+
+
+}
+.mainRight{
+	float: right;
+/*	-webkit-transform:skew(6deg,-6deg);
+	-ms-transform:skew(6deg,-6deg);
+	-moz-transform:skew(6deg,-6deg);
+	-o-transform:skew(6deg,-6deg);*/
+	-webkit-transform:rotate(-6deg);
+	-moz-transform:rotate(-6deg);
+	-ms-transform:rotate(-6deg);
+	-o-transform:rotate(-6deg);
+
+}
+
+.mainLeft h3, .mainRight h3{
+	text-align: center;
+	font-family:Alice, Helvetica, arial, sans-serif, serif, Courier, Times;
+	font-size: 1.8em;
+	padding-bottom: 12px;
+
+}
+
+
+
+.mainRight li, .mainLeft li{
+	padding-left: 20px;
+	font-size: 1.2em;
+	list-style-position: inside; 
+	font-family:  Helvetica, arial, sans-serif, serif, Courier, Times;
+	line-height: 1.6em;
+
+
+}
+
+
+
+
+
+
+
+@font-face {
+	font-family:"Mural Script";
+	src:url("font/MH______.eot?") format("eot"),url("font/MH______.woff") format("woff"),url("font/MH______.ttf") format("truetype"),url("font/MH______.svg#MuralScript") format("svg");
+	font-weight:normal;
+	font-style:normal;
+}
+
+
+
+@font-face {
+	font-family:"Alako-Bold";
+	src:url("font/Alakob.eot?") format("eot"),url("font/Alakob.woff") format("woff"),url("font/Alakob.ttf") format("truetype"),url("font/Alakob.svg#Alako-Bold") format("svg");
+	font-weight:normal;
+	font-style:normal;
+}
+@font-face {
+	font-family:"Alice";
+	src:url("font/Alice.eot?") format("eot"),url("font/Alice.woff") format("woff"),url("font/Alice.ttf") format("truetype"),url("font/Alice.svg#Alice") format("svg");
+	font-weight:normal;
+	font-style:normal;
+}
+
+
+@font-face {
+	font-family:"Snoopy";src:url("font/snoopy_reg-webfont.eot?") format("eot"),url("font/snoopy_reg-webfont.woff") format("woff"),url("font/snoopy_reg-webfont.ttf") format("truetype"),url("font/snoopy_reg-webfont.svg#Snoopy") format("svg");
+	font-weight:normal;
+	font-style:normal;
+}
+

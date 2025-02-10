@@ -1,0 +1,199 @@
+*{
+	padding: 0px;
+	margin: 0px;
+
+}
+body{/*
+	min-width: 1260px;
+	overflow-x: hidden;*/
+	background-color: #E2EBF3;
+}
+
+
+
+
+.headerGlobal{
+	height:45px;
+	width:100%;
+	background-color: #FFFFCC;
+	padding: 2px;
+	position:fixed;
+	opacity: 0.8;
+	z-index: 100;
+
+}
+.headerGlobal img{
+	float:left;
+	vertical-align: center;
+	width:173px;
+	height:40px; 
+	margin-left:5%;
+	border:3px solid brown;
+/*	border-radius: 50px;*/
+/*	opacity: 0.5;
+*/
+}
+
+.headerGlobal ul{
+	vertical-align: center;
+	margin-right: 8%;
+
+}
+
+
+.headerGlobal li{
+	float:right;
+	font-weight: 600;
+	font-size: 1.6em; 
+	font-family:  Mural Script, Alako-Bold, serif, sans-serif,Times, courier;
+	display: inline-block;
+	line-height:45px;
+	color: brown;
+	vertical-align: middle;
+
+}
+/*.headerGlobal a::after{
+	content:"  |  ";
+	white-space: pre;
+	font-size: 1.2em; 
+	line-height:72px;
+	vertical-align: middle;
+ }*/
+
+.headerGlobal a{
+/*	margin: 12px 0;
+	padding:-12px 0;*/
+	display: inline-block;
+	min-width: 10px;
+	border-radius: 30px;
+
+}
+.headerGlobal a:link{
+	font-size: 1.0em;
+	text-decoration: none;
+	opacity: 0.5;
+	color:brown;
+}
+.headerGlobal a:visited{
+	font-size: 1.0em;
+	text-decoration: none;
+
+	color:#990033;
+}
+.headerGlobal a:hover{
+	font-size: 2.0em;	
+	opacity: 2;
+	background-color: orange;
+	transition:background-color 2s, font-size 1s;
+	-moz-transition:background-color 2s, font-size 1s;
+	-webkit-transition:background-color 2s, font-size 1s;
+	-a-transition:background-color 2s, font-size 1s;
+
+	/*background-color:orange;*/
+	/*text-decoration: none;*/
+}
+.headerGlobal a:active{
+	font-size: 1.0em;
+	background-color: #CCFF66;
+}
+
+
+.footer{
+	clear: both;
+	text-align: center;
+	font-size: 0.8em;
+
+
+}
+
+.clean{
+	clear:both;
+}
+
+.container{
+/*	margin-left:auto;
+	margin-right: auto;  
+	margin-bottom: 60px;*/
+	margin: 60px auto;
+	width: 1160px;
+	margin-top: 60px;
+}
+
+.main{
+	padding: 20px 100px;
+	font-family: Helvetica, arial, sans-serif, serif, Courier, Times;
+
+}
+
+.item{
+	border:solid 1px black;
+	border-radius: 24px;
+	padding:30px;
+	margin:12px auto;
+	line-height: 1.6em;
+	clear:both;
+	float:left;
+	width: 880px;
+}
+.item ul{
+	list-style-position: inside;
+
+}
+.item li{
+	padding-left: 2em;
+}
+.left{
+	width:100px;
+	float:left;
+}
+.left h2{
+	font-family: Snoopy, Helvetica, arial, sans-serif, serif, Courier, Times;
+	font-size:2em;
+
+}
+.right{
+	float:right;
+	width:680px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@font-face {
+	font-family:"Mural Script";
+	src:url("font/MH______.eot?") format("eot"),url("font/MH______.woff") format("woff"),url("font/MH______.ttf") format("truetype"),url("font/MH______.svg#MuralScript") format("svg");
+	font-weight:normal;
+	font-style:normal;
+}
+
+
+
+@font-face {
+	font-family:"Alako-Bold";
+	src:url("font/Alakob.eot?") format("eot"),url("font/Alakob.woff") format("woff"),url("font/Alakob.ttf") format("truetype"),url("font/Alakob.svg#Alako-Bold") format("svg");
+	font-weight:normal;
+	font-style:normal;
+}
+@font-face {
+	font-family:"Alice";
+	src:url("font/Alice.eot?") format("eot"),url("font/Alice.woff") format("woff"),url("font/Alice.ttf") format("truetype"),url("font/Alice.svg#Alice") format("svg");
+	font-weight:normal;
+	font-style:normal;
+}
+
+
+@font-face {
+	font-family:"Snoopy";src:url("font/snoopy_reg-webfont.eot?") format("eot"),url("font/snoopy_reg-webfont.woff") format("woff"),url("font/snoopy_reg-webfont.ttf") format("truetype"),url("font/snoopy_reg-webfont.svg#Snoopy") format("svg");
+	font-weight:normal;
+	font-style:normal;
+}
+

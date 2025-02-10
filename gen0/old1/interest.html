@@ -1,0 +1,125 @@
+<DOCTYPE html>
+<html>
+	<head>
+		<title>My Interests</title>
+		<link rel="stylesheet" type="text/css" href="css/interest.css"/>
+		<meta name="description" content="Juncheng Yang"/>
+		<meta name="keywords" content="Juncheng, Yang, Jason, personal website"/>
+		<meta http-equiv="author" content="Juncheng Yang"/>
+		<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+		<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.0.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$("#choice-cs").click(function(){
+					$("#cs").fadeIn("slow");
+					$("#chemistry").fadeOut("slow");
+					$("#choice-cs").css("background-color","#FFAD33");
+					$("#choice-chem").css("background-color","transparent");
+
+				}); 
+				$("#choice-chem").click(function(){
+					$("#cs").fadeOut("slow");
+					$("#chemistry").fadeIn("slow");
+					$("#choice-chem").css("background-color","#FFAD33");
+					$("#choice-cs").css("background-color","transparent");
+				});
+
+			});
+		</script>
+
+	</head>
+
+	<body>
+		<!-- menu part -->
+		<div class="headerGlobal">
+			<img id="logo" src="image/juncheng_logo.png" alt="Juncheng Yang">
+			<ul>
+				<li> <a href="blog/index.html" target="_blank">&nbspMy Blog&nbsp</a>|</li>
+				<li> <a href="life.html">&nbspLife&nbsp</a>|</li>
+				<li> <a href="interest.html">&nbspInterest&nbsp</a>|</li>
+				<li> <a href="resume.html">&nbspResume&nbsp</a>|</li>
+				<li> <a href="index.html">&nbspAbout Me&nbsp</a>|</li>
+			</ul>
+
+		</div>
+		<hr/>
+
+		<div class="container">
+		<div class="main">
+			<div class="begin">
+				<p>Up till now, my academic life can be divided into two parts. 
+				The first one is related to chemistry, material and environmental science. And the second part is in computer science and engineering. Due to my strong interest in computer science and desire for solving problems in everyday life, currently my main focus is on computer science.</p>
+				<ul id="begin-ul" align="center" >
+					<img src="image/computer.jpg" height="20px"><li id="choice-cs" style="background-color: #FFAD33"> Computer Science </li>&nbsp&nbsp&nbsp|
+					&nbsp&nbsp&nbsp <img src="image/chemistry.jpg" height="20px"> <li id="choice-chem">Chemistry </li>
+				</ul>
+			</div>
+			<div id="cs">
+				<p>I have a strong interest in computer science and I would like to use computer to solve problems in everyday life, and this is also my current main focus. Here is some my interests in computer science. </p>
+				<br/><h3>Current interests</h3>
+				<ol>
+					<li>Operating System and some architecture related projects</li>
+					<li>Crawler, data mining and information extraction</li>
+					<li>Database </li>
+					
+				</ol><hr/>
+				<br/><h3>Below are some of the courses taken in computer science related area. </h3>
+				<ul>
+				<h4>undergraduate: </h4>
+					<li>introduction to computer science</li>
+					<li>C programming </li>
+					<li>computer architecture and assembly</li>
+					<li>data structure and algorithms</li>
+					<li>artificial intelligence</li>
+					<li>modern website programming</li>
+				<br/><h4>graduate:</h4>
+					<li>advanced database system</li>
+					<li>advanced algorithms</li>
+					<li>the structure of information network</li>
+					<li>Operating System</li>
+					<li>System Programming</li>
+					<li>Theory of Computing</li>
+					<li>Data Mining</li>
+					<li>Computer Security</li>
+					<li>Advanced Computer System</li>
+					<li>Natural Language Processing</li>
+
+			</div>
+
+			<div id="chemistry">
+				<p>My interests in this area mainly focus on developing new materials for solving energy and environment problem. Here are some my past projects. </p>
+				<br/>
+				
+				<ol>
+				<h3>Projects</h3>
+					<li>Iron-carbon nitride polymer complex and its photocatalytic activity. Oct 2010-Apr 2011</li> <br/>
+					<li>Polymer N-oxide, a novel kind of materials with high photocatalytic activity. May 2011-Sept 2011</li> <br/>
+					<li>Iodine doping carbon nitride polymer and influence on photoactivity. Nov 2011-Jun 2012</li> <br/>
+					<li>Covalent organic frameworl(COF) as a potential photocatalyst. Sep 2012-Jun 2013</li><br/>
+					<li>Simple NOBr system for decontamination of chemical warfare agents(CWAs). Jan 2014-Dec 2015 <br/></li>
+
+				</ol>
+			</div>
+
+		</div>
+		</div>
+
+
+		<div class="footer">
+			<br/>
+			<p> Juncheng Yang, built in 2015 @ Atlanta, GA, USA</p>
+							<!-- Start of StatCounter Code for Default Guide -->
+				<script type="text/javascript">
+					var sc_project=10384898; 
+					var sc_invisible=1; 
+					var sc_security="2d9d418e"; 
+					var scJsHost = (("https:" == document.location.protocol) ? "https://secure." : "http://www.");
+					document.write("<sc"+"ript type='text/javascript' src='" + scJsHost+ "statcounter.com/counter/counter.js'></"+"script>");
+				</script>
+				<noscript><div class="statcounter"><a title="shopify analytics ecommerce tracking" href="http://statcounter.com/shopify/" target="_blank"><img class="statcounter" src="http://c.statcounter.com/10384898/0/2d9d418e/0/" alt="shopify analytics ecommerce tracking"></a></div></noscript>
+				<!-- End of StatCounter Code for Default Guide -->
+				
+		</div>
+	</body>
+</html>
+
