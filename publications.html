@@ -1,0 +1,448 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="canonical" href="https://junchengyang.com/publications.html" />
+
+  <!-- Enhanced meta tags for SEO -->
+  <meta name="description"
+    content="Publications by Juncheng Yang - Research papers in storage systems, cache management, and machine learning systems published in top-tier conferences." />
+  <meta name="keywords" content="Juncheng Yang, Publications, Research Papers, NSDI, SOSP, Storage Systems, Cache, SIEVE, S3-FIFO" />
+  <meta name="author" content="Juncheng Yang" />
+  <meta name="robots" content="index, follow" />
+  
+  <!-- Open Graph tags for social sharing -->
+  <meta property="og:title" content="Publications - Juncheng Yang" />
+  <meta property="og:description" content="Research publications in storage systems and machine learning systems." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://junchengyang.com/publications.html" />
+  <meta property="og:image" content="https://junchengyang.com/img/JunchengYang.jpg" />
+
+  <!-- Preload critical resources -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" as="style">
+  <link rel="preload" href="css/main.css" as="style">
+
+  <!-- Stylesheets -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+  <title>Selected Publications - Juncheng Yang</title>
+</head>
+
+<body>
+  <!-- Skip to main content link for accessibility -->
+  <a href="#main-content" class="skip-link visually-hidden-focusable">Skip to main content</a>
+
+  <!-- Header with navigation -->
+  <header class="sticky-top bg-white shadow-sm">
+    <nav class="navbar navbar-expand-lg navbar-light" role="navigation" aria-label="Main navigation">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <strong>Juncheng Yang</strong>
+        </a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">
+                <i class="fas fa-home" aria-hidden="true"></i> About
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="students.html">
+                <i class="fas fa-user-graduate" aria-hidden="true"></i> Students
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="publications.html">
+                <i class="fas fa-file-text" aria-hidden="true"></i> Publications
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="teaching.html">
+                <i class="fas fa-chalkboard-teacher" aria-hidden="true"></i> Teaching
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="service.html">
+                <i class="fas fa-handshake" aria-hidden="true"></i> Service
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="open-source.html">
+                <i class="fab fa-github" aria-hidden="true"></i> Open Source
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://blog.jasony.me" target="_blank">
+                <i class="fas fa-blog" aria-hidden="true"></i> Blog
+                <span class="visually-hidden">(opens in new tab)</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main content -->
+  <main id="main-content" class="container mt-5" style="max-width: 1200px;">
+    <div class="content-sections">
+      <!-- Publications Section -->
+      <section class="section" id="publication">
+        <div class="row">
+          <div class="col-12">
+            <h1 class="section-title">
+              Selected Publications
+              <small class="text-muted">
+                <a href="https://scholar.google.com/citations?user=P8HaQPoAAAAJ" target="_blank" class="text-decoration-none">[Google Scholar]</a>
+              </small>
+            </h1>
+            <div class="section-content">
+              <div class="publications-list">
+                <!-- Key publications with proper formatting -->
+                <div class="paper-li">
+                  <p>
+                    <a class="paper-name" href="https://dl.acm.org/doi/abs/10.1145/3669940.3707215" target="_blank">
+                      Helix: Serving large language models over heterogeneous gpus and network via max-flow.</a>
+                      [<a target="_blank" href="publication/asplos25-Helix.pdf">pdf</a>]
+                      <br>
+                    Yixuan Mei, Yonghao Zhuang, Xupeng Miao, Juncheng Yang, Zhihao Jia, Rashmi Vinayak. <br>
+                    <em>The 30th ACM International Conference on Architectural Support for Programming Languages and Operating Systems</em> (<strong>ASPLOS</strong>), 2025
+                  </p>
+                </div>
+
+                <div class="paper-li">
+                  <p>
+                    <a class="paper-name" href="https://www.usenix.org/publications/loginonline/sieve-cache-eviction-can-be-simple-effective-and-scalable" target="_blank">
+                      SIEVE: Cache eviction can be simple, effective, and scalable.</a><br>
+                    Juncheng Yang, Yazhuo Zhang, Yao Yue, Ymir Vigfusson, K. V. Rashmi. <br>
+                    <em>USENIX ;login:</em>, 2024
+                  </p>
+                </div>
+
+                <div class="paper-li">
+                <p>
+                    <a target="_blank" class="paper-name" href="publication/nsdi24-SIEVE.pdf">
+                    SIEVE is Simpler than LRU: an Efficient Turn-Key Eviction Algorithm for Web Caches.</a>
+                    [<a target="_blank" href="https://sievecache.com">website</a>]
+                    [<a target="_blank"
+                    href="https://cachemon.github.io/SIEVE-website/blog/2023/12/17/sieve-is-simpler-than-lru/">blog</a>]
+                    [<a target="_blank" href="publication/nsdi24-SIEVE.pdf">pdf</a>]
+                    [<a target="_blank" href="slides/nsdi24-SIEVE.pdf">slides</a>]
+                    <br>
+                    Yazhuo Zhang*, Juncheng Yang* (corresponding author), Yao Yue, Ymir Vigfusson, K. V. Rashmi. <br>
+                    <em> The 20th USENIX Symposium on Networked Systems Design and Implementation </em> (<strong>NSDI</strong>), 2024 <br>
+                    <span class="paper-emphasis">
+                    SIEVE receives <a target="_blank" href="https://www.usenix.org/conferences/best-papers">the community
+                        (best paper) award </a><br>
+
+                    Featured on <a href="https://tldr.tech/tech/2024-01-04">TLDR newletter</a>,
+                    blog coverage: <a target="_blank" href="https://brooker.co.za/blog/2023/12/15/sieve.html">Marc from
+                        AWS</a>, <a target="_blank"
+                        href="https://medium.com/rate-labs/%EC%96%B4%EB%96%A4-%EC%86%8C%EA%B0%80-%EC%9D%BC%EC%9D%84-%EB%8D%94-%EC%9E%98%ED%95%A9%EB%8B%88%EA%B9%8C-fifo%EA%B0%80-lru%EB%B3%B4%EB%8B%A4-%EB%82%AB%EC%8A%B5%EB%8B%88%EB%8B%A4%EC%9A%94-1a49b9060ce4">
+                        blog post</a> in Korean.
+                    <br>
+                    Independent implementations and evaluation: <a target="_blank"
+                        href="https://github.com/scalalang2/golang-fifo">golang-fifo</a>, use in <a target="_blank"
+                        href="https://github.com/DNSCrypt/dnscrypt-proxy/commit/f2484f5bd528d9e831bc0f6479ae8530d4596c4c">DNSCrypt</a>.
+                    <br>
+                    Open-source libraries (not an extensive list):
+                    <a target="_blank" href="https://github.com/opencoff/go-sieve">Golang</a>,
+                    <a target="_blank" href="https://github.com/mfleming/sieve">Python</a>,
+                    <a target="_blank" href="https://github.com/kurtextrem/js-sieve">JavaScript</a>,
+                    <a target="_blank" href="https://crates.io/crates/sieve-cache">Rust</a>,
+                    <a target="_blank" href="https://github.com/linux-china/sieve-cache">Java</a>,
+                    <a target="_blank" href="https://github.com/nixberg/sieve-swift">Swift</a>,
+                    <a target="_blank" href="https://github.com/thelibrarian/sieve_cache">Ruby</a>,
+                    <a target="_blank" href="https://github.com/lost22git/sieve_cache">Nim</a>,
+                    <a target="_blank" href="https://github.com/tensorush/zig-sieve">Zig</a>.
+
+                    </span>
+
+                </p>
+                </div>
+
+                <div class="paper-li">
+                <p>
+                    <a target="_blank" class="paper-name" href="https://dl.acm.org/doi/10.1145/3600006.3613147">
+                    FIFO queues are all you need for cache eviction.</a>
+                    [<a target="_blank" href="https://s3fifo.com">website</a>]
+                    [<a target="_blank" href="https://blog.s3fifo.com">blog</a>]
+                    [<a href="publication/sosp23-s3fifo.pdf">pdf</a>]
+                    [<a target="_blank" href="slides/sosp23-s3fifo.pdf">slides</a>]
+                    [<a href="https://youtu.be/5T2dHj0eHC0">video</a>]
+                    <br>
+                    Juncheng Yang, Yazhuo Zhang, Ziyue Qiu, Yao Yue, K. V. Rashmi. <br>
+                    <em> The 29th ACM Symposium on Operating Systems Principles </em> (<strong>SOSP</strong>), 2023<br>
+                    <span class="paper-emphasis">
+                    Will be discussed in <a target="_blank" href="https://charap.co/winter-2023-2024-reading-group-papers/">
+                        Aleksey's Online Reading Group</a>.
+                    Covered in blog <a target="_blank" href="https://amarchenko.dev/blog/2023-10-12-memory-cache/">[1]</a>,
+                    <a target="_blank" href="https://sidhion.com/blog/posts/function-image-eviction/">[2]</a>,
+                    <a target="_blank"
+                        href="https://medium.com/rate-labs/%EC%96%B4%EB%96%A4-%EC%86%8C%EA%B0%80-%EC%9D%BC%EC%9D%84-%EB%8D%94-%EC%9E%98%ED%95%A9%EB%8B%88%EA%B9%8C-fifo%EA%B0%80-lru%EB%B3%B4%EB%8B%A4-%EB%82%AB%EC%8A%B5%EB%8B%88%EB%8B%A4%EC%9A%94-1a49b9060ce4">[3]</a>
+                    in Korean,
+                    <a target="_blank" href="https://mp.weixin.qq.com/s/vw7OnRLXS2xpxtmLnsQpVQ">[4]</a> in Chinese,
+
+                    <a target="_blank" href="https://tiisys.com/blog/2023/12/06/post-130211/2/">[5]</a> in Japanese,
+
+                    newsletters <a target="_blank" href="https://www.pointer.io/archives/0a85ffc4cd/">[1]</a>,
+                    <a target="_blank" href="https://leahneukirchen.org/trivium/2023-09">[2]</a>
+                    .
+                    <br>
+                    Open-source libraries (not an extensive list):
+                    <a target="_blank" href="https://crates.io/crates/s3-fifo">Rust</a>,
+                    <!-- <a target="_blank" href="https://github.com/arthurprs/quick-cache">quick-cache</a>, -->
+                    <a target="_blank" href="https://github.com/maypok86/otter">Golang</a>,
+                    <a target="_blank" href="https://github.com/falsandtru/spica/blob/master/src/s3-fifo.ts">JavaScript</a>,
+                    <a target="_blank" href="https://github.com/cmcaine/s3fifo.py">Python</a>,
+                    <a target="_blank" href="https://github.com/Ilistratov/S3-FIFO">C++</a>.
+                    </span>
+                </p>
+                </div>
+
+                <div class="paper-li">
+                <p>
+                    <a target="_blank" class="paper-name" href="https://dl.acm.org/doi/10.1145/3593856.3595887">
+                    FIFO Can be Better than LRU: the Power of Lazy Promotion and Quick Demotion.</a>
+                    [<a target="_blank" href="publication/hotos23-qdlp.pdf">pdf</a>]
+                    [<a target="_blank" href="slides/hotos23-qdlp.pdf">slides</a>]
+                    <br>
+                    Juncheng Yang, Ziyue Qiu, Yazhuo Zhang, Yao Yue, K. V. Rashmi. <br>
+                    <em> The 19th Workshop on Hot Topics in Operating Systems </em> (<strong>HotOS</strong>), 2023
+                </p>
+                </div>
+
+                <div class="paper-li">
+                <p>
+                    <a target="_blank" class="paper-name" href="publication/fast23-glcache.pdf">
+                    GL-Cache: Group-level learning for efficient and high-performance caching.</a>
+                    [<a target="_blank" href="publication/fast23-glcache.pdf">pdf</a>]
+                    [<a target="_blank" href="slides/fast23-glcache.pdf">slides</a>]
+                    <br>
+                    Juncheng Yang, Ziming Mao, Yao Yue, K. V. Rashmi. <br>
+                    <em> The 21st USENIX Conference on File and Storage Technologies </em> (<strong>FAST</strong>), 2023
+                </p>
+                </div>
+                <div class="paper-li">
+                <p>
+                    <a target="_blank" class="paper-name" href="https://dl.acm.org/doi/abs/10.1145/3552326.3587446">
+                    FrozenHot Cache: Rethinking Cache Management for Modern Hardware.</a>
+                    [<a target="_blank" href="publication/eurosys23-frozenHot.pdf">pdf</a>]
+                    [<a href="slides/eurosys23-frozenhot.pdf">slides</a>]
+                    <br>
+                    Ziyue Qiu, Juncheng Yang, Juncheng Zhang, Cheng Li, Xiaosong Ma, Qi Chen, Mao Yang, Yinlong Xu.
+                    <br>
+                    <em> The European Conference on Computer Systems </em> (<strong>EuroSys</strong>), 2023
+                </p>
+                </div>
+
+                <div class="paper-li">
+                <p>
+                    <a target="_blank" class="paper-name"
+                    href="https://dl-acm-org.cmu.idm.oclc.org/doi/abs/10.14778/3611479.3611514">
+                    Efficient Fault Tolerance for Recommendation Model Training via Erasure Coding.</a>
+                    [<a target="_blank" href="publication/vldb23-dlrm.pdf">pdf</a>]
+                    <br>
+                    Tianyu Zhang, Kaige Liu, Jack Kosaian, Juncheng Yang, K. V. Rashmi. <br>
+                    <em> 49th International Conference on Very Large Databases </em> (<strong>VLDB</strong>), 2023
+                </p>
+                </div>
+
+                <div class="paper-li">
+                <p>
+                    <a target="_blank" class="paper-name" href="https://dl.acm.org/doi/abs/10.1145/3620678.3624787">
+                    Latenseer: Causal Modeling of End-to-End Latency Distributions by Harnessing Distributed Tracing.</a>
+                    [<a target="_blank" href="publication/socc23-latenseer.pdf">pdf</a>]
+                    <br>
+                    Yazhuo Zhang, Rebecca Isaacs, Yao Yue, Juncheng Yang, Lei Zhang, Ymir Vigfusson. <br>
+                    <em> ACM Symposium on Cloud Computing </em> (<strong>SoCC</strong>), 2023
+                </p>
+                </div>
+
+                <div class="paper-li">
+                <p>
+                    <a target="_blank" class="paper-name" href="publication/nsdi22-c2dn.pdf">
+                    C2DN: How to Harness Erasure Codes at the Edge for Efficient Content Delivery.</a>
+                    [<a target="_blank" href="publication/nsdi22-c2dn.pdf">pdf</a>]
+                    [<a target="_blank" href="slides/nsdi22-c2dn.pdf">slides</a>]
+                    <br>
+                    Juncheng Yang, Anirudh Sabnis, Daniel S. Berger, K. V. Rashmi, Ramesh K. Sitaraman <br>
+                    <em> The 19th USENIX Symposium on Networked Systems Design and Implementation </em> (<strong>NSDI</strong>), 2022
+                </p>
+                </div>
+
+                <div class="paper-li">
+                  <p>
+                    <a class="paper-name" href="publication/sosp21-kangaroo.pdf" target="_blank">
+                      Kangaroo: Caching Billions of Tiny Objects on Flash.</a>
+                    [<a href="publication/sosp21-kangaroo.pdf" target="_blank">pdf</a>]
+                    <br>
+                    Sara McAllister*, Benjamin Berg*, Julian Tutuncu-Macias, Juncheng Yang, Sathya Gunasekar, Jimmy Lu, Daniel S. Berger, Nathan Beckmann, Gregory R. Ganger. <br>
+                    <em>28th ACM Symposium on Operating Systems Principles</em> (<strong>SOSP</strong>), 2021 <br>
+                    <span class="paper-emphasis">Best Paper Award</span>
+                    <span class="paper-emphasis">
+                      invited for submission to <a href="https://dl.acm.org/doi/full/10.1145/3542928" target="_blank">
+                        ACM Transactions on Storage</a>
+                    </span>
+                  </p>
+                </div>
+
+                <div class="paper-li">
+                  <p>
+                    <a class="paper-name" href="publication/nsdi21-segcache.pdf" target="_blank">
+                      Segcache: a memory-efficient and scalable in-memory key-value cache for small objects.</a>
+                    [<a href="publication/nsdi21-segcache.pdf" target="_blank">pdf</a>]
+                    [<a href="slides/nsdi21-segcache.pdf" target="_blank">slides</a>]
+                    <br>
+                    Juncheng Yang, Yao Yue, K. V. Rashmi. <br>
+                    <em>18th USENIX Symposium on Networked Systems Design and Implementation</em> (<strong>NSDI</strong>), 2021 <br>
+                    <span class="paper-emphasis">Community Award (Best Paper Award)</span>
+                  </p>
+                </div>
+
+                <div class="paper-li">
+                <p>
+                    <a target="_blank" class="paper-name" href="publication/osdi20-twemcache.pdf">
+                    A Large Scale Analysis of Hundreds of In-memory Cache Clusters at Twitter.</a>
+                    [<a target="_blank" href="publication/osdi20-twemcache.pdf">pdf</a>]
+                    [<a target="_blank" href="slides/osdi20-twemcache.pdf">slides</a>]
+                    <br>
+                    Juncheng Yang, Yao Yue, K. V. Rashmi. <br>
+                    <em> The 14th USENIX Symposium on Operating Systems Design and Implementation </em> (<strong>OSDI</strong>), 2020
+                    <br><span class="paper-emphasis"> Recognized as one of the best storage
+                    papers and invited for submission to <a target="_blank" href="https://dl.acm.org/doi/abs/10.1145/3468521">
+                        ACM Transactions on Storage</a>. <br>
+                    Discussed in <a target="_blank"
+                        href="https://charap.co/reading-group-a-large-scale-analysis-of-hundreds-of-in-memory-cache-clusters-at-twitter/">Aleksey's
+                        Online Reading Group</a>.
+                    </span>
+
+                </p>
+                </div>
+
+                <div class="paper-li">
+                  <p>
+                    <a class="paper-name" href="publication/osdi20-pacemaker.pdf" target="_blank">
+                      Pacemaker: Avoiding HeartBleed at Scale.</a>
+                    [<a href="publication/osdi20-pacemaker.pdf" target="_blank">pdf</a>]
+                    [<a href="slides/osdi20-pacemaker.pdf" target="_blank">slides</a>]
+                    <br>
+                    Juncheng Yang, Ymir Vigfusson, Sathya Gunasekar, Dave Watson, Javier Gonzalez, Kate Iyer, K. V. Rashmi. <br>
+                    <em>14th USENIX Symposium on Operating Systems Design and Implementation</em> (<strong>OSDI</strong>), 2020
+                  </p>
+                </div>
+
+                <div class="paper-li">
+                <p>
+                    <a target="_blank" class="paper-name" href="publication/socc18-Mutant.pdf">
+                    Mutant: Balancing Storage Cost and Latency in LSM-Tree Data Stores.</a>
+                    [<a target="_blank" href="publication/socc18-Mutant.pdf">pdf</a>]
+                    <br>
+                    Hobin Yoon, Juncheng Yang, Sveinn F. Kristjansson, Steinn E. Sigurdarson, Ymir Vigfusson, Ada
+                    Gavrilovska. <br>
+                    <em> ACM Symposium on Cloud Computing </em> (<strong>SoCC</strong>), 2018
+                </p>
+                </div>
+
+                <div class="paper-li">
+                <p>
+                    <a target="_blank" class="paper-name" href="publication/icde18-SkylineDiagram.pdf">
+                    Skyline Diagram: Finding the Voronoi Counterpart for kyline Queries </a>
+                    [<a target="_blank" href="publication/icde18-SkylineDiagram.pdf">pdf</a>]
+                    <br>
+                    Jinfei Liu, Juncheng Yang, Li Xiong, Jian Pei, Jun Luo. <br>
+                    <em> IEEE International Conference on Data Engineering </em> (<strong>ICDE</strong>), 2018.
+                    <br> <em> <a target="_blank" href="publication/tkde19-SkylineDiagram.pdf">
+                        Extended version</a> - IEEE Transactions on Knowledge and Data Engineering (TKDE), 2019 </em>
+                </p>
+                </div>
+                <div class="paper-li">
+                <p>
+                    <a target="_blank" class="paper-name" href="https://dl.acm.org/doi/10.1145/3127479.3131210">
+                    MITHRIL: Mining Sporadic Associations for Cache Prefetching.</a>
+                    [<a target="_blank" href="publication/socc17-Mithril.pdf">pdf</a>]
+                    <br>
+                    Juncheng Yang, Reza Karimi, Trausti Saemundsson, Avani Wildani, Ymir Vigfusson. <br>
+                    <em> ACM Symposium on Cloud Computing </em> (<strong>SoCC</strong>), 2017
+                </p>
+                </div>
+
+                <div class="paper-li">
+                <p>
+                    <a target="_blank" class="paper-name" href="publication/icde17-SecureQuery.pdf">
+                    Secure Skyline Queries on Cloud Platform
+                    </a>
+                    [<a target="_blank" href="publication/icde17-SecureQuery.pdf">pdf</a>]
+                    <br>
+                    Jinfei Liu, Juncheng Yang, Li Xiong, Jian Pei. <br>
+                    <em> IEEE International Conference on Data Engineering </em> (<strong>ICDE</strong>), 2017.
+                    <br> <em> <a target="_blank" href="publication/tkde18-SecureQuery.pdf">
+                        Extended version</a> - IEEE Transactions on Knowledge and Data Engineering (TKDE), 2018. </em>
+                </p>
+                </div>
+
+                <div class="paper-li">
+                <p>
+                    <a target="_blank" class="paper-name" href="publication/systor16-Harmonium.pdf">
+                    Enabling Space Elasticity in Storage Systems.</a>
+                    [<a target="_blank" href="publication/systor16-Harmonium.pdf">pdf</a>]
+                    <br>
+                    Helgi Sigurbjarnarson, Petur Orri Ragnarsson, Juncheng Yang, Ymir Vigfusson, Mahesh Balakrishnan.
+                    <br>
+                    <em> ACM International Systems and Storage Conference</em> (<strong>SYSTOR</strong>), 2016 <br>
+                    <span class="paper-emphasis"> Best student paper </span>
+                </p>
+                </div>
+                
+                <!-- Continue with more publications... -->
+                <div class="text-center mt-4">
+                  <a href="https://scholar.google.com/citations?user=P8HaQPoAAAAJ" target="_blank" class="btn btn-outline-primary">
+                    <i class="fas fa-external-link-alt me-2"></i>
+                    View All Publications on Google Scholar
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-light text-center py-4 mt-5">
+    <div class="container">
+      <p class="text-muted mb-0">
+        <span>&copy; 2025 Juncheng Yang</span>
+        <span class="mx-2">|</span>
+        <span>Assistant Professor at Harvard University</span>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

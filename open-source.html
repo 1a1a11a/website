@@ -4,20 +4,20 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="canonical" href="https://junchengyang.com/faq.html" />
+  <link rel="canonical" href="https://junchengyang.com/open-source.html" />
 
   <!-- Enhanced meta tags for SEO -->
   <meta name="description"
-    content="Frequently asked questions about working with Juncheng Yang - PhD applications, postdoc positions, undergraduate research opportunities." />
-  <meta name="keywords" content="Juncheng Yang, FAQ, PhD, Research, Harvard, Computer Science, Postdoc" />
+    content="Open-source software and data by Juncheng Yang - libCacheSim, distComp, and other tools for systems research." />
+  <meta name="keywords" content="Juncheng Yang, Open Source, libCacheSim, GitHub, Software, Tools, Research" />
   <meta name="author" content="Juncheng Yang" />
   <meta name="robots" content="index, follow" />
   
   <!-- Open Graph tags for social sharing -->
-  <meta property="og:title" content="FAQ - Juncheng Yang" />
-  <meta property="og:description" content="Frequently asked questions about research opportunities and collaboration." />
+  <meta property="og:title" content="Open Source - Juncheng Yang" />
+  <meta property="og:description" content="Open-source software and research tools." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://junchengyang.com/faq.html" />
+  <meta property="og:url" content="https://junchengyang.com/open-source.html" />
   <meta property="og:image" content="https://junchengyang.com/img/JunchengYang.jpg" />
 
   <!-- Preload critical resources -->
@@ -37,7 +37,7 @@
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
 
-  <title>FAQ - Juncheng Yang</title>
+  <title>Open Source - Juncheng Yang</title>
 </head>
 
 <body>
@@ -85,7 +85,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="open-source.html">
+              <a class="nav-link active" href="open-source.html">
                 <i class="fab fa-github" aria-hidden="true"></i> Open Source
               </a>
             </li>
@@ -104,88 +104,43 @@
   <!-- Main content -->
   <main id="main-content" class="container mt-5" style="max-width: 1200px;">
     <div class="content-sections">
-      <!-- FAQ Section -->
-      <section class="section" id="faq">
+      <!-- Open Source Section -->
+      <section class="section" id="open-source">
         <div class="row">
           <div class="col-12">
-            <h1 class="section-title">Frequently Asked Questions</h1>
+            <h1 class="section-title">Open-Source Software & Data</h1>
             <div class="section-content">
-              
-              <div class="faq-item">
-                <h2 class="faq-question">
-                  Do you have openings for Postdoctoral Researcher or visiting scholars?
-                </h2>
-                <div class="faq-answer">
-                  <p>Yes, please send me your CV.</p>
-                </div>
-              </div>
-
-              <div class="faq-item">
-                <h2 class="faq-question">
-                  I am interested in working with you for my Ph.D., what should I do?
-                </h2>
-                <div class="faq-answer">
-                  <p>Please apply to Harvard University and mention me in your application.</p>
-                </div>
-              </div>
-
-              <div class="faq-item">
-                <h2 class="faq-question">
-                  I am an undergraduate student or master student, can I join your lab?
-                </h2>
-                <div class="faq-answer">
-                  <p>Yes, we have openings for undergraduate and master students with <strong>strong</strong> motivations. However, we have the following requirements:</p>
-                  <ul class="mt-3">
-                    <li>Have taken at least one course in computer systems, e.g., Operating Systems, Distributed Systems, Computer Networks.</li>
-                    <li>Able to commit at least 20 hours per week for six months</li>
-                  </ul>
-                  <div class="alert alert-warning mt-3" role="alert">
-                    <strong>Screening Test:</strong> If you do not have previous research experience, we have a screening test to make sure you have the necessary skills. Please take one issue labeled with "help-wanted" from <a href="https://github.com/1a1a11a/libCacheSim" target="_blank" class="alert-link">libCacheSim</a> and solve it.
-                    If you encounter any difficulty, please leave comments on GitHub. 
+              <div class="open-source-grid">
+                <div class="open-source-item">
+                  <div class="open-source-header">
+                    <i class="fab fa-github me-2" aria-hidden="true"></i>
+                    <a href="https://github.com/1a1a11a/libCacheSim" target="_blank" class="open-source-title">
+                      libCacheSim
+                    </a>
+                    <span class="open-source-subtitle">High-performance cache library and simulator</span>
                   </div>
+                  <p class="open-source-description">
+                    A high-performance, open-source C++ library designed to simulate and analyze cache systems efficiently. 
+                    It provides a flexible framework for exploring cache design choices and evaluating their impact on performance.
+                    Used by almost 100 research institutes and companies worldwide.
+                  </p>
+                </div>
+
+                <div class="open-source-item">
+                  <div class="open-source-header">
+                    <i class="fab fa-github me-2" aria-hidden="true"></i>
+                    <a href="https://github.com/1a1a11a/distComp" target="_blank" class="open-source-title">
+                      distComp
+                    </a>
+                    <span class="open-source-subtitle">DRAM-usage-agnostic distributed computing tool</span>
+                  </div>
+                  <p class="open-source-description">
+                    An open-source tool that enables parallel execution of computation jobs across a cluster of servers, 
+                    effectively managing resources to prevent out-of-memory (OOM) errors. The main benefit is running 
+                    as many jobs as possible simultaneously, improving resource utilization and faster job completion times.
+                  </p>
                 </div>
               </div>
-
-              <div class="faq-item">
-                <h2 class="faq-question">
-                  I want to work on machine learning, can I join your lab?
-                </h2>
-                <div class="faq-answer">
-                  <p>I do not work on machine learning. However, my group designs efficient and reliable systems for machine learning. If you are not interested in system building, this may not be the right fit for you.</p>
-                </div>
-              </div>
-
-              <div class="faq-item">
-                <h2 class="faq-question">
-                  I am applying for graduate school, can you write a recommendation letter for me?
-                </h2>
-                <div class="faq-answer">
-                  <p>I am happy to support your application, however, I can only write strong letters for students with whom I have had 20+ hours of interactions, e.g., office hour, project discussions...</p>
-                </div>
-              </div>
-
-              <div class="faq-item">
-                <h2 class="faq-question">
-                  I am applying for a green card, can you write a recommendation letter for me?
-                </h2>
-                <div class="faq-answer">
-                  <p>I can write you a letter only if we had significant interactions before.</p>
-                </div>
-              </div>
-
-              <div class="faq-item">
-                <h2 class="faq-question">
-                  I sent you an email but did not get a response, what should I do?
-                </h2>
-                <div class="faq-answer">
-                  <p>I read every email very carefully. However, due to the high volume of emails, I apologize for not being able to respond to every email.</p>
-                </div>
-              </div>
-
-              <div class="text-muted mt-5">
-                <p><small><i class="fas fa-calendar me-2" aria-hidden="true"></i>Last updated: July 5, 2025</small></p>
-              </div>
-
             </div>
           </div>
         </div>
@@ -210,3 +165,5 @@
     crossorigin="anonymous"></script>
 
 </body>
+
+</html>

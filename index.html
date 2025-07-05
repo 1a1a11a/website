@@ -3,874 +3,343 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="canonical" href="https://junchengyang.com" />
 
+  <!-- Enhanced meta tags for SEO -->
+  <meta name="description"
+    content="Juncheng Yang - Assistant Professor at Harvard University School of Engineering and Applied Science. Research in storage systems, data management, and machine learning systems." />
+  <meta name="keywords" content="Juncheng Yang, Harvard, Computer Science, Storage Systems, Cache, Machine Learning Systems, SIEVE, S3-FIFO, Segcache" />
+  <meta name="author" content="Juncheng Yang" />
+  <meta name="robots" content="index, follow" />
+  
+  <!-- Open Graph tags for social sharing -->
+  <meta property="og:title" content="Juncheng Yang - Assistant Professor at Harvard University" />
+  <meta property="og:description" content="Research in storage systems, data management, and machine learning systems." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://junchengyang.com" />
+  <meta property="og:image" content="https://junchengyang.com/img/JunchengYang.jpg" />
+  
+  <!-- Twitter Card tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Juncheng Yang - Assistant Professor at Harvard University" />
+  <meta name="twitter:description" content="Research in storage systems, data management, and machine learning systems." />
+  <meta name="twitter:image" content="https://junchengyang.com/img/JunchengYang.jpg" />
+
+  <!-- Preload critical resources -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" as="style">
+  <link rel="preload" href="css/main.css" as="style">
+
+  <!-- Stylesheets -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-
-
-
-  <meta name="description"
-    content="I am an Assistant Professor at School of Engineering and Applied Science, Harvard University" />
-  <meta name="keywords" content="Juncheng, Yang" />
-  <meta http-equiv="author" content="Juncheng Yang" />
-
-  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,600,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
 
-  <!-- font awseome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
-    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-  <script src="https://kit.fontawesome.com/a670f411c7.js"></script>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
 
-  <script src="script/main.js"></script>
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
 
-  <title>Juncheng Yang's website</title>
+  <title>Juncheng Yang - Assistant Professor at Harvard University</title>
 </head>
 
 
 <body>
+  <!-- Skip to main content link for accessibility -->
+  <a href="#main-content" class="skip-link visually-hidden-focusable">Skip to main content</a>
 
-
-  <div class="container d-flex justify-content-around">
-    <nav class="navbar navbar-expand-md sticky-top bg-body-tertiary shadow">
-      <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
-          aria-controls="navbarScroll" aria-expanded="true" aria-label="Toggle navigation">
+  <!-- Header with navigation -->
+  <header class="sticky-top bg-white shadow-sm">
+    <nav class="navbar navbar-expand-lg navbar-light" role="navigation" aria-label="Main navigation">
+      <div class="container">
+        <a class="navbar-brand" href="#intro">
+          <strong>Juncheng Yang</strong>
+        </a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarScroll">
-          <!-- this changes the nav to a scroll dropdown finishes -->
-          <ul class="navbar-nav">
-            <li class="nav-item nav-justified"> <a class="nav-link mx-0 mx-xl-2"
-                onclick="show_secs(['intro', 'news', 'recruiting', 'researchInterest', 'researchHigh', 'publication', 'student', 'teaching', 'talk', 'service', 'award', 'bio', 'open-source']);">Home</a>
+        
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#intro">
+                <i class="fas fa-home" aria-hidden="true"></i> About
+              </a>
             </li>
-            <li class="nav-item nav-justified">
-              <a class="nav-link mx-0 mx-xl-2" onclick="show_secs(['researchInterest', 'researchHigh']);">
-                Research</a>
+            <li class="nav-item">
+              <a class="nav-link" href="students.html">
+                <i class="fas fa-user-graduate" aria-hidden="true"></i> Students
+              </a>
             </li>
-            <li class="nav-item nav-justified">
-              <a class="nav-link mx-0 mx-xl-2" onclick="show_sec('student')">Students</a>
+            <li class="nav-item">
+              <a class="nav-link" href="publications.html">
+                <i class="fas fa-file-text" aria-hidden="true"></i> Publications
+              </a>
             </li>
-            <li class="nav-item nav-justified">
-              <a class="nav-link mx-0 mx-xl-2" onclick="show_sec('publication')">Publication</a>
+            <li class="nav-item">
+              <a class="nav-link" href="teaching.html">
+                <i class="fas fa-chalkboard-teacher" aria-hidden="true"></i> Teaching
+              </a>
             </li>
-            <li class="nav-item nav-justified">
-              <a class="nav-link mx-0 mx-xl-2" onclick="show_sec('teaching')">Teaching</a>
+            <li class="nav-item">
+              <a class="nav-link" href="service.html">
+                <i class="fas fa-handshake" aria-hidden="true"></i> Service
+              </a>
             </li>
-            <li class="nav-item nav-justified">
-              <a class="nav-link mx-0 mx-xl-2" onclick="show_sec('talk')"> Talks</a>
+            <li class="nav-item">
+              <a class="nav-link" href="open-source.html">
+                <i class="fab fa-github" aria-hidden="true"></i> Open Source
+              </a>
             </li>
-            <li class="nav-item nav-justified">
-              <a class="nav-link mx-0 mx-xl-2" onclick="show_sec('service')">Service</a>
-            </li>
-            <li class="nav-item nav-justified">
-              <a class="nav-link mx-0 mx-xl-2" onclick="show_sec('award')">Awards</a>
-            </li>
-            <li class="nav-item nav-justified">
-              <a class="nav-link mx-0 mx-xl-2" onclick="show_sec('bio')">Bio</a>
-            </li>
-            <li class="nav-item nav-justified">
-              <a class="nav-link mx-0 mx-xl-2" onclick="show_sec('open-source')">Open-Source</a>
-            </li>
-            <li class="nav-item nav-justified">
-              <a class="nav-link mx-0 mx-xl-2" target="_blank" href="https://blog.jasony.me">Blog</a>
+            <li class="nav-item">
+              <a class="nav-link" href="https://blog.jasony.me" target="_blank">
+                <i class="fas fa-blog" aria-hidden="true"></i> Blog
+                <span class="visually-hidden">(opens in new tab)</span>
+              </a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-  </div>
-  <br><br>
+  </header>
 
-  <div class="container" style="max-width: 1200px;">
-    <div class="row">
-      <div class="col-0 col-md-1"></div>
-      <div class="col-4 col-md-3 col-lg-2 mx-lg-5">
-        <img class="img-fluid" src="img/JunchengYang.jpg" alt="Juncheng Yang">
-      </div>
-      <div class="col-8 col-lg-6">
-        <h1>Juncheng Yang</h1>
-        <h2>Assistant Professor</h2>
-        <p>
-        <h2>School of Engineering and Applied Sciences, Harvard University</h2>
-        </p>
-        <p class="mb-4">
-        <h4><a href="mailto:juncheng@seas.harvard.edu">juncheng@seas.harvard.edu</a></h4>
-        </p>
-        <p>
-        <h4> SEC 4.410 </h4>
-        <h4>150 Western Ave, Allston, MA, 02134</h4>
-        </p>
-        <!-- <div class="d-none d-md-block">
-          <a target="_blank" href="https://twitter.com/1a1a11a" class="fab fa-twitter-square fa-lg"></a> &nbsp;
-          <a target="_blank" href="https://www.facebook.com/1a1a11a" class="fab fa-facebook-square fa-lg"></a> &nbsp;
-          <a target="_blank" href="https://www.linkedin.com/in/juncheng-yang-8b870661"
-            class="fab fa-linkedin fa-lg"></a>
-          &nbsp;
-          <a target="_blank" href="https://github.com/1a1a11a" class="fab fa-github fa-lg"></a> &nbsp;
-        </div> -->
-        <br>
-
-      </div>
-    </div>
-    <br>
-    <hr>
-
-    <div class="container section" id="intro">
-      <p> I am an Assistant Professor in School of Applied Science and Engineering, Harvard University.
-        <!-- I lead the Harvard MDAS (<span class="text-decoration-underline fw-bold">M</span>easurement and <span
-          class="text-decoration-underline fw-bold">D</span>esign of <span
-          class="text-decoration-underline fw-bold">A</span>lgorithms and <span
-          class="text-decoration-underline fw-bold">S</span>ystems) group. -->
-      </p>
-      <p>I am broadly interested in <b>storage systems</b>, <b>data management</b> and <b>machine learning
-          systems</b> with particular interests on <b>workload analysis, efficient storage, and sustainable system
-          design</b>.
-        I like in-depth measurement and analysis to get deep understanding of systems and algorithms in the real
-        world.
-      </p>
-      <!-- On the data management and storage system side, I have worked on various cache systems (block, key-value, CDN) and large-scale distributed storage systems to improve the efficiency, performance and reliability. -->
-      <!-- On the machine learning system side, I am interested in applying lightweight machine learning to improve the efficiency of storage systems (ML for system), and building efficient deep learning systems (system for ML).  -->
-
-      <!-- My faviourite article is John's <i><a target="_blank" href="https://dl.acm.org/doi/10.1145/3213770"> Always measure one-level deeper</a></i>. -->
-      <!-- Many of my works draw inspirations from observations and measurements in production systems. -->
-
-      <p> My works have received best-paper awards at
-        <a target="_blank"
-          href="https://www.usenix.org/conferences/best-papers?taxonomy_vocabulary_1_tid=2024&title_1=NSDI">NSDI'24</a>,
-        <a target="_blank"
-          href="https://www.usenix.org/conferences/best-papers?taxonomy_vocabulary_1_tid=2021&title_1=NSDI">NSDI'21</a>,
-        <a target="_blank" href="https://sosp2021.mpi-sws.org/awards.html">SOSP'21</a>, VALUETOOLS'24, and
-        <a target="_blank" href="https://www.systor.org/2016/">SYSTOR'16</a> and have been deployed in
-        production at Google, VMware, Twitter, Redpanda, Momento with many open-source libraries contributed by the
-        community.
-        My research has been sponsored by <a target="_blank"
-          href="https://research.facebook.com/fellows/yang-juncheng/">Meta</a>, <a
-          href="https://cloud.google.com/edu/researchers/innovators">Google Cloud</a>, and AWS.
-        I am a <a href="https://research.facebook.com/fellows/">2020 Meta Fellow</a>, a <a
-          href="https://cloud.google.com/edu/researchers/innovators?hl=en">2023 Google Cloud Research Innovator</a>, and
-        <a target="_blank" href="https://mlcommons.org/en/rising-stars-2023/">a 2023 Rising Star in
-          Machine Learning and Systems</a>.
-        <!-- I received my Ph.D. from Carnegie Mellon University in 2024. -->
-      </p>
-      <!-- <p> I actively mentor undergraduates and junior Ph.D. students, especially students from underrepresented group.
-        If you would like to have a chat, send me a message. </p> -->
-
-      <!-- <p> Previously, I have worked extensively with <a target="_blank" href="https://twitter.com/thinkingfish"> Yao Yue </a> at Twitter on key-value caches, <a target="_blank" href="http://ymsir.com/index.html"> Ymir Vigfusson </a> at Emory University on storage block I/O cache. 
-          Besides, I have also collaborated with <a target="_blank" href="https://groups.cs.umass.edu/ramesh/"> Ramesh Sitaraman </a> at UMass on content delivery networks, <a target="_blank" href="https://www.microsoft.com/en-us/research/people/daberg/"> Daniel Berger </a> at MSR and <a target="_blank" href="http://www.mathcs.emory.edu/~lxiong/"> Li Xiong</a> and <a target="_blank" href="https://dblp.org/pid/89/9935.html"> Jinfei Liu </a> at Emory University on data management. </p> -->
-
-      <hr>
-    </div>
-
-    <div class="container section" id="recruiting">
-      <div class="alert alert-primary">
-        <p><b class=text-primary> I am looking for highly motivated students to join my lab. Please read <a href="faq.html" target="_blank">this page</a> if you are interested in
-            working with me or asking for a recommendation letter. </b></p>
-      </div>
-      <hr>
-    </div>
-
-
-    <!-- <h5><a target="_blank" href="CV.pdf"> My CV </a></h5> <hr> -->
-
-    <div class="container section" id="news">
-      <h2>News <font size="3">[<a onclick="load_content('news.html', 'news')">all news</a>]</font>
-      </h2>
-      <ul>
-        <li>
-          04/2024 - <a href="https://sievecache.com">SIEVE</a> received a community award at NSDI'24, was featured on
-          <a href="https://tldr.tech/tech/2024-01-04">TLDR newletter</a> and discussed in a
-          <a href="https://brooker.co.za/blog/2023/12/15/sieve.html">a blog post by Marc</a>.
-          Many open-source libraries (in more than 12 languges) are available on GitHub.
-        </li>
-        <li>
-          12/2023 - <a href="https://s3fifo.com">S3-FIFO</a> was discussed in
-          <a target="_blank" href="https://charap.co/winter-2023-2024-reading-group-papers/">Aleksey's Online Reading
-            Group</a>,
-          it has been covered by blogs in
-          <a target="_blank" href="https://amarchenko.dev/blog/2023-10-12-memory-cache/">English</a>,
-          <a target="_blank" href="https://mp.weixin.qq.com/s/vw7OnRLXS2xpxtmLnsQpVQ">Chinese</a>,
-          <a taget="_blank"
-            href="https://medium.com/rate-labs/%EC%96%B4%EB%96%A4-%EC%86%8C%EA%B0%80-%EC%9D%BC%EC%9D%84-%EB%8D%94-%EC%9E%98%ED%95%A9%EB%8B%88%EA%B9%8C-fifo%EA%B0%80-lru%EB%B3%B4%EB%8B%A4-%EB%82%AB%EC%8A%B5%EB%8B%88%EB%8B%A4%EC%9A%94-1a49b9060ce4">Korean</a>,
-          and
-          <a target="_blank" href="https://tiisys.com/blog/2023/12/06/post-130211/2/">Japanese</a>,
-          used in course reading materials at <a target="_blank"
-            href="https://docs.google.com/document/d/1XX5ksgLVnkPE-dfeVDZPlv5NMbgxJqWmi13YEQt1t1o/edit#heading=h.k6znr7t8urvp">UIUC
-            CS525</a>,
-          and implemented at Google, VMware,
-          <a target="_blank" href="https://github.com/redpanda-data/redpanda/pull/14759">Redpanda</a>
-          and in many open-source libraries and systems.
-        </li>
-        <li>
-          08/2023 - Recognized as
-          <a target="_blank" href="https://mlcommons.org/en/rising-stars-2023/">
-            a Rising Star in machine learning and systems.
-          </a>
-        </li>
-        <li>
-          08/2023 - 10/2023 Invited to talk about S3-FIFO at Cloudflare, Alluxio, VMware, Kuaishou, MSRA, USTC,
-          Tsinghua University, WOS conference.
-        </li>
-        <li>
-          05/2023 - Honored to be a
-          <a target="_blank" href="https://cloud.google.com/edu/researchers/innovators">
-            Google Cloud Research Innovator </a>with funding from Google Cloud.
-        </li>
-        <li>
-          10/2022 - 02/2023 - Invited to talk about LESSCache at VMware, Meta and Oracle.
-        </li>
-        <li>
-          10/2022 - Invited speaker to talk about ubiquitous caching at
-          <a
-            href="https://qconsf.com/presentation/oct2022/ubiquitous-caching-journey-building-efficient-distributed-and-process-caches">
-            QCon SF
-          </a>.
-        </li>
-        <li>
-          09/2020 - Gave a keynote talk together with Yao Yue at SNIA SDC on using PMEM for caching
-        </li>
-      </ul>
-      <hr>
-    </div>
-
-    <div class="container section" id="researchInterest">
-      <h2> Research Areas and Interests </h2>
-      Storage systems and machine learning systems with a focus on efficiency, scalability and robustness:
-      <ul>
-        <li> <b>Efficient</b> and <b>scalable</b> cache management systems </li>
-        <ul>
-          <li> Measurement studies [<a target="_blank" href="publication/osdi20-twemcache.pdf">OSDI'20</a>, <a
-              href="publication/tos21-twemcache.pdf">TOS'21</a>][<a href="publication/hotos23-qdlp.pdf">HotOS'23</a>]
-          </li>
-          <li> New cache system designs [<a target="_blank" href="publication/nsdi21-segcache.pdf">NSDI'21</a>][<a
-              href="publication/sosp21-kangaroo.pdf">SOSP'21</a>, <a
-              href="publication/tos22-kangaroo.pdf">TOS'22</a>][<a
-              href="publication/eurosys23-frozenHot.pdf">EuroSys'23</a>] </li>
-          <li> New replacement algorithm designs [<a target="_blank"
-              href="publication/sosp23-s3fifo.pdf">SOSP'23</a>][<a href="publication/nsdi24-sieve.pdf">NSDI'24</a>]
-          </li>
-        </ul>
-        <li> <b>Robust</b> and <b>reliable</b> cache/storage management and machine learning systems [<a
-            href="publication/osdi20-pacemaker.pdf">OSDI'20</a>][<a href="publication/nsdi22-c2dn.pdf">NSDI'22</a>][<a
-            target="_blank" href="publication/vldb23-dlrm.pdf">VLDB'23</a>]</li>
-        <!-- <li> <b>Sustainable</b> serving and store of <b>unpopular</b> data </li> -->
-        <li> New approaches to make machine learning <b>practical</b> for storage systems (machine learning for
-          systems) [<a target="_blank" href="publication/fast23-glcache.pdf">FAST'23</a>][<a
-            href="publication/socc17-Mithril.pdf">SOCC'17</a>] </li>
-        <li> <b>Performance optimization</b> and sustainability of microservices and serverless architecture [<a
-            href="https://dl.acm.org/doi/abs/10.1145/3620678.3624787">SOCC'23</a>] </li>
-        <li> Reliable large model inference on wimpy hardware (system for machine learning) </li>
-        <!-- <li> Data management, sustainability, ml for computer system </li> -->
-      </ul>
-      <hr>
-    </div>
-
-    <div class="container section" id="researchHigh">
-      <h2> Research Highlights </h2>
-      <ul>
-        <li> <b>SIEVE (NSDI'24)</b>: the first cache eviction algorithm <b>simpler</b> than LRU but yet more
-          <b>effective</b> than state-of-the-art algorithms for web caches. <b>Implemented in many open-source
-            libraries</b>, e.g.,
-          <a target="_blank" href="https://github.com/opencoff/go-sieve">Golang</a>,
-          <a target="_blank" href="https://github.com/mfleming/sieve">Python</a>,
-          <a target="_blank" href="https://github.com/kurtextrem/js-sieve">JavaScript</a>,
-          <a target="_blank" href="https://crates.io/crates/sieve-cache">Rust</a>,
-          <a target="_blank" href="https://github.com/linux-china/sieve-cache">Java</a>,
-          <a target="_blank" href="https://github.com/nixberg/sieve-swift">Swift</a>,
-          <a target="_blank" href="https://github.com/thelibrarian/sieve_cache">Ruby</a>,
-          <a target="_blank" href="https://github.com/lost22git/sieve_cache">Nim</a>, and
-          <a target="_blank" href="https://github.com/tensorush/zig-sieve">Zig</a>. Find more details <a
-            href="https://sieve-cache.com">here</a>.
-
-        </li>
-        <li> <b>S3-FIFO (SOSP'23)</b>: a simple and scalable cache eviction algorithm composed of only FIFO queues.
-          <b>Implemented or deployed at companies</b> including Google, VMware and <a target="_blank"
-            href="https://github.com/redpanda-data/redpanda/pull/14759">Redpanda</a>, and many open-source libraries.
-          Find more details <a href="https://s3fifo.com">here</a>.
-        </li>
-        <li> <b>GL-Cache (FAST'23)</b>: my exploration on bringing low-overhead machine learning to caching. </li>
-        <li> <b>Segcache (NSDI'21)</b> received a <b>best-paper award, and deployed at Twitter and Momento</b>. </li>
-        <li> <b>Kangaroo (SOSP'21)</b> received a <b>best-paper award</b> at SOSP'21. </li>
-      </ul>
-      <hr>
-    </div>
-
-    <div class="container section" id="student">
-
-      <p>I have been very fortunate to work with many talented students. If you have worked with me, but not showing up
-        on this page, please feel free to let me know. </p>
-      <div class="container" id="current_student">
-        <!-- <div id="postdoc" class="contianer">
-          <h2>Researchers and Postdocs</h2>
-
-        </div> -->
-        <div id="phd" class="contianer">
-          <h2>Ph.D. Students</h2>
-          <ul>
-            <li> Yunjia Zheng </li>
-          </ul>
+  <!-- Main content -->
+  <main id="main-content" class="container mt-5" style="max-width: 1200px;">
+    <!-- Hero Section -->
+    <section class="hero-section mb-5">
+      <div class="row align-items-center">
+        <div class="col-lg-4 col-md-5 mb-4 mb-md-0">
+          <div class="profile-image-container">
+            <img class="img-fluid shadow" src="img/JunchengYang.jpg" alt="Juncheng Yang - Assistant Professor at Harvard University" width="300" height="300">
+          </div>
         </div>
+        <div class="col-lg-8 col-md-7">
+          <div class="hero-content">
+            <h1 class="display-4 fw-bold mb-2">Juncheng Yang</h1>
+            <h2 class="h3 text-muted mb-3">Assistant Professor</h2>
+            <h3 class="h4 mb-4">School of Engineering and Applied Sciences<br>Harvard University</h3>
 
-        <div id="visiting" class="container">
-          <h2> Visiting Students and Researchers </h2>
-          <ul>
-            <li> Haocheng Xia (UIUC) </li>
-            <!-- <li> Xiaojun Guo (HUST) </li> -->
-          </ul>
-        </div>
+            <div class="contact-info mb-4">
+              <p class="mb-2">
+                <i class="fas fa-envelope me-2" aria-hidden="true"></i>
+                <a href="mailto:juncheng@seas.harvard.edu" class="text-decoration-none">juncheng@seas.harvard.edu</a>
+              </p>
+              <p class="mb-2">
+                <i class="fas fa-map-marker-alt me-2" aria-hidden="true"></i>
+                SEC 4.410, 150 Western Ave, Allston, MA 02134
+              </p>
+            </div>
 
-        <div id="undergraduate" class="container">
-          <h2>Master and Undergraduate Students</h2>
-          <ul>
-            <li> <a href="https://www.linkedin.com/in/qinghan-chen-056148251/">Bob Chen</a> (undergraduate at CMU) </li>
-            <li> <a href="https://www.linkedin.com/in/vivian-yiyan-zhai">YiYan Zhai</a> (undergraduate at CMU)</li>
-            <li> <a href="https://www.linkedin.com/in/bintang-dwi-marthen">Bintang Dwi Marthen</a> (undergraduate at ITB)</li>
-            <li> <a href="https://www.linkedin.com/in/raflyhanggaraksa/">Raden Rafly H. B.</a> (undergraduate at ITB)</li>
-            <li> <a href="">Muhammad Haekal M. A.</a> (undergraduate at ITS)</li>
-            <li> <a href="">Mingyan Gao</a> (undergraduate at ZJU and UIUC)</li>
-            
-            </li>
-          </ul>
-        </div>
-
-
-        <div id="other" class="container">
-          <h2>Students that I have worked closely with</h2>
-          <ul>
-            <li> <a href="https://ziyueqiu.github.io/">Ziyue Qiu</a> (2022-present, Ph.D. at CMU)</li>
-            <li> <a href="https://yazhuozhang.com/">Yazhuo Zhang</a> (2022-present, Postdoc at ETH Zurich)</li>
-            <li> <a href="https://www.linkedin.com/in/hongshu-yan-7b9b79175">Hongshu Yan</a> (2025, Master at ETH Zurich)</li>
-            <li> <a href="https://jerryw35.github.io/">Zirui Wang</a> (2024-present, Ph.D. at UVA)</li>
-            <li> <a href="https://alexsssu.github.io/">Zhaoyuan Su</a> (2024-present, Ph.D. at UVA)</li>
-            <li> <a href="https://qinpr.github.io/">Peiran Qin</a>(2024-2025, Master at University of Chicago)</li>
-            <li> <a href="https://www.linkedin.com/in/rannnayy">Rani Ayu Putri</a>(2024-2025, Ph.D. at University of Chicago)</li>
-          </ul>
+            <div class="social-links">
+              <a href="https://scholar.google.com/citations?user=P8HaQPoAAAAJ" target="_blank" class="btn btn-outline-primary btn-sm me-2 mb-2">
+                <i class="ai ai-google-scholar" aria-hidden="true"></i> Google Scholar
+              </a>
+              <!-- <a href="https://github.com/1a1a11a" target="_blank" class="btn btn-outline-primary btn-sm me-2 mb-2">
+                <i class="fab fa-github" aria-hidden="true"></i> GitHub
+              </a> -->
+              <!-- <a href="https://www.linkedin.com/in/juncheng-yang-8b870661" target="_blank" class="btn btn-outline-primary btn-sm me-2 mb-2">
+                <i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn
+              </a> -->
+              <a href="CV.pdf" target="_blank" class="btn btn-outline-secondary btn-sm mb-2">
+                <i class="fas fa-file-pdf" aria-hidden="true"></i> CV
+              </a>
+            </div>
+          </div>
         </div>
       </div>
+    </section>
 
-      <div class="container" id="alumni">
-        <h2>Alumni</h2>
-        <div id="phd" class="container">
-          <!-- <h2>Ph.D. Students</h2> -->
+    <!-- Content Sections -->
+    <article class="content-sections">
+      <!-- Introduction Section -->
+      <section class="section" id="intro">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="section-title">About</h2>
+            <div class="section-content">
+              <p>I am an Assistant Professor in the School of Engineering and Applied Sciences at Harvard University. I received my Ph.D. in Computer Science from Carnegie Mellon University.</p>
+
+              <p>I am broadly interested in <strong>storage</strong>, <strong>data management</strong>, and <strong>machine learning
+                  systems</strong> with particular focus on <strong>workload analysis, efficient storage, and sustainable system
+                  design</strong>. I like in-depth measurement and analysis to get deep understanding of systems and algorithms in the real
+                  world.</p>
+
+              <p>My works have received best-paper awards at
+                <a href="https://www.usenix.org/conferences/best-papers?taxonomy_vocabulary_1_tid=2024&title_1=NSDI" target="_blank">NSDI'24</a>,
+                <a href="https://www.usenix.org/conferences/best-papers?taxonomy_vocabulary_1_tid=2021&title_1=NSDI" target="_blank">NSDI'21</a>,
+                <a href="https://sosp2021.mpi-sws.org/awards.html" target="_blank">SOSP'21</a>, 
+                VALUETOOLS'24, and
+                <a href="https://www.systor.org/2016/" target="_blank">SYSTOR'16</a> 
+                and have been deployed in production at Google, VMware, Twitter, Redpanda, Momento with many open-source libraries contributed by the
+                community.</p>
+
+              <p>My research has been sponsored by 
+                <a href="https://research.facebook.com/fellows/yang-juncheng/" target="_blank">Meta</a>, 
+                <a href="https://cloud.google.com/edu/researchers/innovators" target="_blank">Google Cloud</a>, 
+                and AWS.
+                I am a <a href="https://research.facebook.com/fellows/" target="_blank">2020 Meta Fellow</a>, 
+                a <a href="https://cloud.google.com/edu/researchers/innovators?hl=en" target="_blank">2023 Google Cloud Research Innovator</a>, 
+                and <a href="https://mlcommons.org/en/rising-stars-2023/" target="_blank">a 2023 Rising Star in Machine Learning and Systems</a>.
+              </p>
+            </div>
+          </div>
         </div>
-        <div id="undergraduate" class="container">
-          <h3>Master and Undergraduate Students</h3>
-          <ul>
-            <li> <a href="https://www.linkedin.com/in/helen-wang-jingzhi22">Helen Wang</a> (2023, undergraduate at CMU) </li>
-            <li> <a href="https://www.linkedin.com/in/zhuofan-chen-4167191b1">Frank Chen</a> (2022-2023, undergraduate at CMU): won the
-              second place in 2023 ACM student research competition </li>
-            <li> Parinay Chauhan (2022, undergraduate at IIT)</li>
-            <li> <a href="https://www.linkedin.com/in/exz">Emily Zhang</a> (2022, undergraduate at CMU -> Roblox) </li>
-            <li> <a href="https://maoziming.github.io/">Ziming Mao</a> (2022, undergraduate at Yale University -> Phd at UC Berkeley)
-            </li>
-            <li> <a href="https://www.linkedin.com/in/jonathan-chiu-32b65815b">Jonathan Chiu</a> (2021, undergraduate at CMU -> Meta)
-            </li>
-          </ul>
+      </section>
+
+      <!-- News Section -->
+      <section class="section" id="news">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="section-title">
+              News
+              <small class="text-muted">
+                <a href="news.html" target="_blank" class="text-decoration-none">[more]</a>
+              </small>
+            </h2>
+            <div class="section-content">
+              <div class="news-list-compact">
+                <div class="news-item-compact">
+                  <span class="news-date">04/2024 &nbsp;</span>
+                  <a href="https://sievecache.com" target="_blank"><strong>SIEVE</strong></a> received a community award at NSDI'24, was featured on <a href="https://tldr.tech/tech/2024-01-04" target="_blank">TLDR newsletter</a> and discussed in <a href="https://brooker.co.za/blog/2023/12/15/sieve.html" target="_blank">a blog post by Marc</a>. Many open-source libraries (in more than 12 languages) are available on GitHub.
+                </div>
+                <div class="news-item-compact">
+                  <span class="news-date">12/2023 &nbsp;</span>
+                  <a href="https://s3fifo.com" target="_blank"><strong>S3-FIFO</strong></a> was discussed in <a href="https://charap.co/winter-2023-2024-reading-group-papers/" target="_blank">Aleksey's Online Reading Group</a>, covered by blogs in <a href="https://amarchenko.dev/blog/2023-10-12-memory-cache/" target="_blank">English</a>, <a href="https://mp.weixin.qq.com/s/vw7OnRLXS2xpxtmLnsQpVQ" target="_blank">Chinese</a>, <a href="https://medium.com/rate-labs/%EC%96%B4%EB%96%A4-%EC%86%8C%EA%B0%80-%EC%9D%BC%EC%9D%84-%EB%8D%94-%EC%9E%98%ED%95%A9%EB%8B%88%EA%B9%8C-fifo%EA%B0%80-lru%EB%B3%B4%EB%8B%A4-%EB%82%AB%EC%8A%B5%EB%8B%88%EB%8B%A4%EC%9A%94-1a49b9060ce4" target="_blank">Korean</a>, and <a href="https://tiisys.com/blog/2023/12/06/post-130211/2/" target="_blank">Japanese</a>, used in <a href="https://docs.google.com/document/d/1XX5ksgLVnkPE-dfeVDZPlv5NMbgxJqWmi13YEQt1t1o/edit#heading=h.k6znr7t8urvp" target="_blank">UIUC CS525</a>, and implemented at Google, VMware, <a href="https://github.com/redpanda-data/redpanda/pull/14759" target="_blank">Redpanda</a> and many open-source libraries.
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <hr>
-    </div>
+      </section>
 
+      <!-- Recruiting Section -->
+      <section class="section" id="recruiting">
+        <!-- <div class="row"> -->
+          <!-- <div class="col-12"> -->
+            <div class="alert alert-primary" role="alert">
+              <!-- <h3 class="alert-heading">
+                <i class="fas fa-users me-2" aria-hidden="true"></i>
+                Recruiting Students
+              </h3> -->
+              <p class="mb-0">
+                <strong>I am looking for highly motivated students to join my lab.</strong> <br>
+                Please read <a href="faq.html" target="_blank" class="alert-link">this page</a> 
+                if you are interested in working with me or asking for a recommendation letter.
+              </p>
+            </div>
+          <!-- </div> -->
+        <!-- </div> -->
+      </section>
 
+      <!-- Research Interests Section -->
+      <section class="section" id="researchInterest">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="section-title">Research Areas and Interests</h2>
+            <div class="section-content">
+              <p>Storage systems and machine learning systems with a focus on efficiency, scalability and robustness:</p>
+              <ul class="research-areas">
+                <li><strong>Efficient</strong> and <strong>scalable</strong> cache management systems
+                  <ul>
+                    <li>Measurement studies [<a href="publication/osdi20-twemcache.pdf" target="_blank">OSDI'20</a>, <a href="publication/tos21-twemcache.pdf" target="_blank">TOS'21</a>][<a href="publication/hotos23-qdlp.pdf" target="_blank">HotOS'23</a>]</li>
+                    <li>New cache system designs [<a href="publication/nsdi21-segcache.pdf" target="_blank">NSDI'21</a>][<a href="publication/sosp21-kangaroo.pdf" target="_blank">SOSP'21</a>, <a href="publication/tos22-kangaroo.pdf" target="_blank">TOS'22</a>][<a href="publication/eurosys23-frozenHot.pdf" target="_blank">EuroSys'23</a>]</li>
+                    <li>New replacement algorithm designs [<a href="publication/sosp23-s3fifo.pdf" target="_blank">SOSP'23</a>][<a href="publication/nsdi24-sieve.pdf" target="_blank">NSDI'24</a>]</li>
+                  </ul>
+                </li>
+                <li><strong>Robust</strong> and <strong>reliable</strong> cache/storage management and machine learning systems [<a href="publication/osdi20-pacemaker.pdf" target="_blank">OSDI'20</a>][<a href="publication/nsdi22-c2dn.pdf" target="_blank">NSDI'22</a>][<a href="publication/vldb23-dlrm.pdf" target="_blank">VLDB'23</a>]</li>
+                <li>New approaches to make machine learning <strong>practical</strong> for storage systems (machine learning for systems) [<a href="publication/fast23-glcache.pdf" target="_blank">FAST'23</a>][<a href="publication/socc17-Mithril.pdf" target="_blank">SOCC'17</a>]</li>
+                <li><strong>Performance optimization</strong> and sustainability of microservices and serverless architecture [<a href="https://dl.acm.org/doi/abs/10.1145/3620678.3624787" target="_blank">SOCC'23</a>]</li>
+                <li>Reliable large model inference on wimpy hardware (system for machine learning)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
 
-    <div class="container section" id="publication">
-      <h2>Selected Publications<a href="https://scholar.google.com/citations?user=P8HaQPoAAAAJ">
-          <font size="3"> [Google Scholar] </font>
-        </a> </h2>
-      <ul>
-        <li class="paper-li">
-          <p>
-            <a class="paper-name" target="_blank"
-              href="https://www.usenix.org/publications/loginonline/sieve-cache-eviction-can-be-simple-effective-and-scalable">
-              SIEVE: Cache eviction can be simple, effective, and scalable.</a><br>
-            Juncheng Yang, Yazhuo Zhang, Yao Yue, Ymir Vigfusson, K. V. Rashmi. <br>
-            <i> USENIX ;login: </i>, 2024 <br>
-          </p>
+      <!-- Research Highlights Section -->
+      <section class="section" id="researchHigh">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="section-title">Research Highlights</h2>
+            <div class="section-content">
+              <div class="research-highlights-compact">
+                <div class="highlight-item">
+                  <strong>SIEVE (NSDI'24)</strong>: the first cache eviction algorithm <strong>simpler</strong> than LRU but yet more <strong>effective</strong> than state-of-the-art algorithms for web caches. <strong>Implemented in many open-source libraries</strong>, e.g., <a href="https://github.com/opencoff/go-sieve" target="_blank">Golang</a>, <a href="https://github.com/mfleming/sieve" target="_blank">Python</a>, <a href="https://github.com/kurtextrem/js-sieve" target="_blank">JavaScript</a>, <a href="https://crates.io/crates/sieve-cache" target="_blank">Rust</a>, <a href="https://github.com/linux-china/sieve-cache" target="_blank">Java</a>, <a href="https://github.com/nixberg/sieve-swift" target="_blank">Swift</a>, <a href="https://github.com/thelibrarian/sieve_cache" target="_blank">Ruby</a>, <a href="https://github.com/lost22git/sieve_cache" target="_blank">Nim</a>, and <a href="https://github.com/tensorush/zig-sieve" target="_blank">Zig</a>. Find more details <a href="https://sieve-cache.com" target="_blank">here</a>.
+                </div>
+                <div class="highlight-item">
+                  <strong>S3-FIFO (SOSP'23)</strong>: a simple and scalable cache eviction algorithm composed of only FIFO queues. <strong>Implemented or deployed at companies</strong> including Google, VMware and <a href="https://github.com/redpanda-data/redpanda/pull/14759" target="_blank">Redpanda</a>, and many open-source libraries. Find more details <a href="https://s3fifo.com" target="_blank">here</a>.
+                </div>
+                <div class="highlight-item">
+                  <strong>Segcache (NSDI'21)</strong>: received a <strong>community best-paper award, and deployed at Twitter and Momento</strong>.
+                </div>
+                <!-- <div class="highlight-item">
+                  <strong>Kangaroo (SOSP'21)</strong> received a <strong>best-paper award</strong> at SOSP'21.
+                </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        </li>
-        <li class="paper-li">
-          <p>
-            <a target="_blank" class="paper-name" href="publication/nsdi24-SIEVE.pdf">
-              SIEVE is Simpler than LRU: an Efficient Turn-Key Eviction Algorithm for Web Caches.</a>
-            [<a target="_blank" href="https://sievecache.com">website</a>]
-            [<a target="_blank"
-              href="https://cachemon.github.io/SIEVE-website/blog/2023/12/17/sieve-is-simpler-than-lru/">blog</a>]
-            [<a target="_blank" href="publication/nsdi24-SIEVE.pdf">pdf</a>]
-            [<a target="_blank" href="slides/nsdi24-SIEVE.pdf">slides</a>]
-            <br>
-            Yazhuo Zhang*, Juncheng Yang* (corresponding author), Yao Yue, Ymir Vigfusson, K. V. Rashmi. <br>
-            <i> The 20th USENIX Symposium on Networked Systems Design and Implementation </i> (<b>NSDI</b>), 2024 <br>
-            <span class="paper-emphasis">
-              SIEVE receives <a target="_blank" href="https://www.usenix.org/conferences/best-papers">the community
-                (best paper) award </a><br>
+      <!-- Bio Section -->
+      <section class="section" id="bio">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="section-title">Bio</h2>
+            <div class="section-content">
+              <p>
+                Juncheng Yang is an Assistant Professor in the School of Engineering and Applied Science at Harvard University.
+                He received his Ph.D. in Computer Science from Carnegie Mellon University in 2024. His research interests
+                broadly cover the efficiency, performance, reliability, and sustainability of large-scale data systems.
+              </p>
+              <p>
+                Juncheng's works have received best paper awards at NSDI'24, NSDI'21, SOSP'21, and SYSTOR'16. His OSDI'20 paper
+                was recognized as one of the best storage papers at the conference and invited to ACM TOS'21. Juncheng received
+                a Facebook Ph.D. Fellowship in 2020, was recognized as a Rising Star in machine learning and systems in 2023,
+                and a Google Cloud Research Innovator in 2023.
+              </p>
+              <p>
+                His work, Segcache, has been adopted for production at Twitter and Momento. The two eviction algorithms he
+                designed (S3-FIFO, SIEVE) have been adopted for production at Google, VMware, Redpanda, and several others, with
+                over 20 open-source libraries available on GitHub.
+                Moreover, the open-source cache simulation library he created, libCacheSim, has been used by almost 100 research
+                institutes and companies.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </article>
+  </main>
 
-              Featured on <a href="https://tldr.tech/tech/2024-01-04">TLDR newletter</a>,
-              blog coverage: <a target="_blank" href="https://brooker.co.za/blog/2023/12/15/sieve.html">Marc from
-                AWS</a>, <a target="_blank"
-                href="https://medium.com/rate-labs/%EC%96%B4%EB%96%A4-%EC%86%8C%EA%B0%80-%EC%9D%BC%EC%9D%84-%EB%8D%94-%EC%9E%98%ED%95%A9%EB%8B%88%EA%B9%8C-fifo%EA%B0%80-lru%EB%B3%B4%EB%8B%A4-%EB%82%AB%EC%8A%B5%EB%8B%88%EB%8B%A4%EC%9A%94-1a49b9060ce4">
-                blog post</a> in Korean.
-              <br>
-              Independent implementations and evaluation: <a target="_blank"
-                href="https://github.com/scalalang2/golang-fifo">golang-fifo</a>, use in <a target="_blank"
-                href="https://github.com/DNSCrypt/dnscrypt-proxy/commit/f2484f5bd528d9e831bc0f6479ae8530d4596c4c">DNSCrypt</a>.
-              <br>
-              Open-source libraries (not an extensive list):
-              <a target="_blank" href="https://github.com/opencoff/go-sieve">Golang</a>,
-              <a target="_blank" href="https://github.com/mfleming/sieve">Python</a>,
-              <a target="_blank" href="https://github.com/kurtextrem/js-sieve">JavaScript</a>,
-              <a target="_blank" href="https://crates.io/crates/sieve-cache">Rust</a>,
-              <a target="_blank" href="https://github.com/linux-china/sieve-cache">Java</a>,
-              <a target="_blank" href="https://github.com/nixberg/sieve-swift">Swift</a>,
-              <a target="_blank" href="https://github.com/thelibrarian/sieve_cache">Ruby</a>,
-              <a target="_blank" href="https://github.com/lost22git/sieve_cache">Nim</a>,
-              <a target="_blank" href="https://github.com/tensorush/zig-sieve">Zig</a>.
-
-            </span>
-
-          </p>
-        </li>
-
-        <li class="paper-li">
-          <p>
-            <a target="_blank" class="paper-name" href="https://dl.acm.org/doi/10.1145/3600006.3613147">
-              FIFO queues are all you need for cache eviction.</a>
-            [<a target="_blank" href="https://s3fifo.com">website</a>]
-            [<a target="_blank" href="https://blog.s3fifo.com">blog</a>]
-            [<a href="publication/sosp23-s3fifo.pdf">pdf</a>]
-            [<a target="_blank" href="slides/sosp23-s3fifo.pdf">slides</a>]
-            [<a href="https://youtu.be/5T2dHj0eHC0">video</a>]
-            <br>
-            Juncheng Yang, Yazhuo Zhang, Ziyue Qiu, Yao Yue, K. V. Rashmi. <br>
-            <i> The 29th ACM Symposium on Operating Systems Principles </i> (<b>SOSP</b>), 2023<br>
-            <span class="paper-emphasis">
-              Will be discussed in <a target="_blank" href="https://charap.co/winter-2023-2024-reading-group-papers/">
-                Aleksey's Online Reading Group</a>.
-              Covered in blog <a target="_blank" href="https://amarchenko.dev/blog/2023-10-12-memory-cache/">[1]</a>,
-              <a target="_blank" href="https://sidhion.com/blog/posts/function-image-eviction/">[2]</a>,
-              <a target="_blank"
-                href="https://medium.com/rate-labs/%EC%96%B4%EB%96%A4-%EC%86%8C%EA%B0%80-%EC%9D%BC%EC%9D%84-%EB%8D%94-%EC%9E%98%ED%95%A9%EB%8B%88%EA%B9%8C-fifo%EA%B0%80-lru%EB%B3%B4%EB%8B%A4-%EB%82%AB%EC%8A%B5%EB%8B%88%EB%8B%A4%EC%9A%94-1a49b9060ce4">[3]</a>
-              in Korean,
-              <a target="_blank" href="https://mp.weixin.qq.com/s/vw7OnRLXS2xpxtmLnsQpVQ">[4]</a> in Chinese,
-
-              <a target="_blank" href="https://tiisys.com/blog/2023/12/06/post-130211/2/">[5]</a> in Japanese,
-
-              newsletters <a target="_blank" href="https://www.pointer.io/archives/0a85ffc4cd/">[1]</a>,
-              <a target="_blank" href="https://leahneukirchen.org/trivium/2023-09">[2]</a>
-              .
-              <br>
-              Open-source libraries (not an extensive list):
-              <a target="_blank" href="https://crates.io/crates/s3-fifo">Rust</a>,
-              <!-- <a target="_blank" href="https://github.com/arthurprs/quick-cache">quick-cache</a>, -->
-              <a target="_blank" href="https://github.com/maypok86/otter">Golang</a>,
-              <a target="_blank" href="https://github.com/falsandtru/spica/blob/master/src/s3-fifo.ts">JavaScript</a>,
-              <a target="_blank" href="https://github.com/cmcaine/s3fifo.py">Python</a>,
-              <a target="_blank" href="https://github.com/Ilistratov/S3-FIFO">C++</a>.
-            </span>
-          </p>
-        </li>
-
-        <li class="paper-li">
-          <p>
-            <a target="_blank" class="paper-name" href="https://dl.acm.org/doi/10.1145/3593856.3595887">
-              FIFO Can be Better than LRU: the Power of Lazy Promotion and Quick Demotion.</a>
-            [<a target="_blank" href="publication/hotos23-qdlp.pdf">pdf</a>]
-            [<a target="_blank" href="slides/hotos23-qdlp.pdf">slides</a>]
-            <br>
-            Juncheng Yang, Ziyue Qiu, Yazhuo Zhang, Yao Yue, K. V. Rashmi. <br>
-            <i> The 19th Workshop on Hot Topics in Operating Systems </i> (<b>HotOS</b>), 2023
-          </p>
-        </li>
-
-        <li class="paper-li">
-          <p>
-            <a target="_blank" class="paper-name" href="publication/fast23-glcache.pdf">
-              GL-Cache: Group-level learning for efficient and high-performance caching.</a>
-            [<a target="_blank" href="publication/fast23-glcache.pdf">pdf</a>]
-            [<a target="_blank" href="slides/fast23-glcache.pdf">slides</a>]
-            <br>
-            Juncheng Yang, Ziming Mao, Yao Yue, K. V. Rashmi. <br>
-            <i> The 21st USENIX Conference on File and Storage Technologies </i> (<b>FAST</b>), 2023
-          </p>
-        </li>
-        <li class="paper-li">
-          <p>
-            <a target="_blank" class="paper-name" href="https://dl.acm.org/doi/abs/10.1145/3552326.3587446">
-              FrozenHot Cache: Rethinking Cache Management for Modern Hardware.</a>
-            [<a target="_blank" href="publication/eurosys23-frozenHot.pdf">pdf</a>]
-            [<a href="slides/eurosys23-frozenhot.pdf">slides</a>]
-            <br>
-            Ziyue Qiu, Juncheng Yang, Juncheng Zhang, Cheng Li, Xiaosong Ma, Qi Chen, Mao Yang, Yinlong Xu.
-            <br>
-            <i> The European Conference on Computer Systems </i> (<b>EuroSys</b>), 2023
-          </p>
-        </li>
-
-        <li class="paper-li">
-          <p>
-            <a target="_blank" class="paper-name"
-              href="https://dl-acm-org.cmu.idm.oclc.org/doi/abs/10.14778/3611479.3611514">
-              Efficient Fault Tolerance for Recommendation Model Training via Erasure Coding.</a>
-            [<a target="_blank" href="publication/vldb23-dlrm.pdf">pdf</a>]
-            <br>
-            Tianyu Zhang, Kaige Liu, Jack Kosaian, Juncheng Yang, K. V. Rashmi. <br>
-            <i> 49th International Conference on Very Large Databases </i> (<b>VLDB</b>), 2023
-          </p>
-        </li>
-
-        <li class="paper-li">
-          <p>
-            <a target="_blank" class="paper-name" href="https://dl.acm.org/doi/abs/10.1145/3620678.3624787">
-              Latenseer: Causal Modeling of End-to-End Latency Distributions by Harnessing Distributed Tracing.</a>
-            [<a target="_blank" href="publication/socc23-latenseer.pdf">pdf</a>]
-            <br>
-            Yazhuo Zhang, Rebecca Isaacs, Yao Yue, Juncheng Yang, Lei Zhang, Ymir Vigfusson. <br>
-            <i> ACM Symposium on Cloud Computing </i> (<b>SoCC</b>), 2023
-          </p>
-        </li>
-
-        <li class="paper-li">
-          <p>
-            <a target="_blank" class="paper-name" href="publication/nsdi22-c2dn.pdf">
-              C2DN: How to Harness Erasure Codes at the Edge for Efficient Content Delivery.</a>
-            [<a target="_blank" href="publication/nsdi22-c2dn.pdf">pdf</a>]
-            [<a target="_blank" href="slides/nsdi22-c2dn.pdf">slides</a>]
-            <br>
-            Juncheng Yang, Anirudh Sabnis, Daniel S. Berger, K. V. Rashmi, Ramesh K. Sitaraman <br>
-            <i> The 19th USENIX Symposium on Networked Systems Design and Implementation </i> (<b>NSDI</b>), 2022
-          </p>
-        </li>
-
-        <li class="paper-li">
-          <p>
-            <a target="_blank" class="paper-name" href="publication/nsdi21-segcache.pdf">
-              Segcache: memory-efficient and high-throughput DRAM cache for small objects.</a>
-            [<a target="_blank" href="publication/nsdi21-segcache.pdf">pdf</a>]
-            [<a target="_blank" href="slides/nsdi21-segcache.pdf">slides</a>]
-            <br>
-            Juncheng Yang, Yao Yue, K. V. Rashmi. <br>
-            <i> The 18th USENIX Symposium on Networked Systems Design and Implementation </i> (<b>NSDI</b>), 2021<br>
-            <a target="_blank" href="https://www.usenix.org/conferences/best-papers">
-              <span class="paper-emphasis"> Segcache receives the community award (one of the best papers)
-            </a>
-            <br> <em>This work has been adopted for production at Twitter. </em> <a
-              href="https://pelikan.io/2021/segcache.html">See a short summary of the work.</a><br>
-            Open-source systems and libraries:
-            <a target="_blank" href="https://github.com/pelikan-io/pelikan">Pelikan</a>,
-            <a target="_blank" href="https://crates.io/crates/segcache">Rust crate</a>,
-            </span>
-
-          </p>
-        </li>
-
-
-
-        <li class="paper-li">
-          <p>
-            <a target="_blank" class="paper-name" href="publication/sosp21-kangaroo.pdf">
-              Kangaroo: Caching Billions of Tiny Objects on Flash.</a>
-            [<a target="_blank" href="publication/sosp21-kangaroo.pdf">pdf</a>]
-            [<a target="_blank" href="slides/sosp21-kangaroo.pdf">slides</a>]
-            <br>
-            Sara McAllister, Benjamin Berg, Julian Tutuncu-Macias, Juncheng Yang, Sathya Gunasekar, Jimmy Lu,
-            Nathan Beckmann, Gregory R. Ganger. <br>
-            <i> 28th ACM Symposium on Operating Systems Principles </i> (<b>SOSP</b>), 2021
-            <br><i> <a target="_blank" href="publication/tos22-kangaroo.pdf"> Extended version</a> (invited
-              submission) - ACM
-              Transaction on storage (TOS) 2022 </i>
-            <br>
-            <span class="paper-emphasis"> Kangaroo receives the best paper award
-            </span>
-          </p>
-        </li>
-
-        <li class="paper-li">
-          <p>
-            <a target="_blank" class="paper-name" href="publication/osdi20-twemcache.pdf">
-              A Large Scale Analysis of Hundreds of In-memory Cache Clusters at Twitter.</a>
-            [<a target="_blank" href="publication/osdi20-twemcache.pdf">pdf</a>]
-            [<a target="_blank" href="slides/osdi20-twemcache.pdf">slides</a>]
-            <br>
-            Juncheng Yang, Yao Yue, K. V. Rashmi. <br>
-            <i> The 14th USENIX Symposium on Operating Systems Design and Implementation </i> (<b>OSDI</b>), 2020
-            <br><span class="paper-emphasis"> Recognized as one of the best storage
-              papers and invited for submission to <a target="_blank" href="https://dl.acm.org/doi/abs/10.1145/3468521">
-                ACM Transactions on Storage</a>. <br>
-              Discussed in <a target="_blank"
-                href="https://charap.co/reading-group-a-large-scale-analysis-of-hundreds-of-in-memory-cache-clusters-at-twitter/">Aleksey's
-                Online Reading Group</a>.
-            </span>
-
-          </p>
-        </li>
-
-        <li class="paper-li">
-          <p>
-            <a target="_blank" class="paper-name" href="publication/osdi20-pacemaker.pdf">
-              PACEMAKER: Avoiding HeART Attacks in Storage Clusters with Disk-adaptive Redundancy.</a>
-            [<a target="_blank" href="publication/osdi20-pacemaker.pdf">pdf</a>][<a target="_blank"
-              href="slides/osdi20-pacemaker.pdf">slides</a>]
-            <br>
-            Saurabh Kadekodi, Francisco Maturana, Suhas Jayaram Subramanya, Juncheng Yang, K. V. Rashmi,
-            Gregory R. Ganger. <br>
-            <i> 14th USENIX Symposium on Operating Systems Design and Implementation </i> (<b>OSDI</b>), 2020
-          </p>
-        </li>
-
-        <li class="paper-li">
-          <p>
-            <a target="_blank" class="paper-name" href="publication/socc18-Mutant.pdf">
-              Mutant: Balancing Storage Cost and Latency in LSM-Tree Data Stores.</a>
-            [<a target="_blank" href="publication/socc18-Mutant.pdf">pdf</a>]
-            <br>
-            Hobin Yoon, Juncheng Yang, Sveinn F. Kristjansson, Steinn E. Sigurdarson, Ymir Vigfusson, Ada
-            Gavrilovska. <br>
-            <i> ACM Symposium on Cloud Computing </i> (<b>SoCC</b>), 2018
-          </p>
-        </li>
-
-        <li class="paper-li">
-          <p>
-            <a target="_blank" class="paper-name" href="publication/icde18-SkylineDiagram.pdf">
-              Skyline Diagram: Finding the Voronoi Counterpart for kyline Queries </a>
-            [<a target="_blank" href="publication/icde18-SkylineDiagram.pdf">pdf</a>]
-            <br>
-            Jinfei Liu, Juncheng Yang, Li Xiong, Jian Pei, Jun Luo. <br>
-            <i> IEEE International Conference on Data Engineering </i> (<b>ICDE</b>), 2018.
-            <br> <i> <a target="_blank" href="publication/tkde19-SkylineDiagram.pdf">
-                Extended version</a> - IEEE Transactions on Knowledge and Data Engineering (TKDE), 2019 </i>
-          </p>
-        </li>
-
-
-        <li class="paper-li">
-          <p>
-            <a target="_blank" class="paper-name" href="https://dl.acm.org/doi/10.1145/3127479.3131210">
-              MITHRIL: Mining Sporadic Associations for Cache Prefetching.</a>
-            [<a target="_blank" href="publication/socc17-Mithril.pdf">pdf</a>]
-            <br>
-            Juncheng Yang, Reza Karimi, Trausti Saemundsson, Avani Wildani, Ymir Vigfusson. <br>
-            <i> ACM Symposium on Cloud Computing </i> (<b>SoCC</b>), 2017
-          </p>
-        </li>
-
-        <li class="paper-li">
-          <p>
-            <a target="_blank" class="paper-name" href="publication/icde17-SecureQuery.pdf">
-              Secure Skyline Queries on Cloud Platform
-            </a>
-            [<a target="_blank" href="publication/icde17-SecureQuery.pdf">pdf</a>]
-            <br>
-            Jinfei Liu, Juncheng Yang, Li Xiong, Jian Pei. <br>
-            <i> IEEE International Conference on Data Engineering </i> (<b>ICDE</b>), 2017.
-            <br> <i> <a target="_blank" href="publication/tkde18-SecureQuery.pdf">
-                Extended version</a> - IEEE Transactions on Knowledge and Data Engineering (TKDE), 2018. </i>
-          </p>
-        </li>
-
-        <li class="paper-li">
-          <p>
-            <a target="_blank" class="paper-name" href="publication/systor16-Harmonium.pdf">
-              Enabling Space Elasticity in Storage Systems.</a>
-            [<a target="_blank" href="publication/systor16-Harmonium.pdf">pdf</a>]
-            <br>
-            Helgi Sigurbjarnarson, Petur Orri Ragnarsson, Juncheng Yang, Ymir Vigfusson, Mahesh Balakrishnan.
-            <br>
-            <i> ACM International Systems and Storage Conference</i> (<b>SYSTOR</b>), 2016 <br>
-            <span class="paper-emphasis"> Best student paper </span>
-          </p>
-        </li>
-      </ul>
-      <hr>
-    </div>
-
-    <div class="container section" id="teaching">
-      <h2>Teaching</h2>
-      <ul>
-        <!-- <li> 2022, 2023 Guest lecturer for 15613 Introduction to Computer Systems </li>
-        <li> 2022 Guest lecturer for Advanced Operating Systems and Distributed Systems </li>
-        <li> 2022 TA 15712 Advanced Operating Systems and Distributed Systems </li>
-        <li> 2020 TA 18746 Storage Systems </li>
-        <li> 2017 Guest lecturer for CS584 Advanced Computer System </li>
-        <li> 2017 Teaching assistant CS453 Computer Security </li> -->
-      </ul>
-      <hr>
-    </div>
-
-
-    <div class="container section" id="service">
-      <h2>Services</h2>
-      <h3>Conference</h3>
-      <ul>
-        <li> FAST Artifact Evaluation Chair: 2025, 2026 </li>
-        <li> FAST Reivewer: 2025, 2026 </li>
-        <li> MLSys Reviewer: 2025 </li>
-        <li> ICDCS Reviewer: 2025 </li>
-      </ul>
-      <h3> Workshop </h3>
-      <ul>
-        <li> New England Systems Day: 2025</li>
-        <li> HotStorage Reviewer: 2025</li>
-      </ul>
-      <h3>Journal review</h3>
-      <ul>
-        <li> ACM Transactions on Storage (TOS): 2023 </li>
-        <li> ACM Computing Survey: 2025 </li>
-        <li> Springer Journal of Supercomputing: 2024 </li>
-        <li> IEEE Transaction on Computers (TOC): 2023, 2024 </li>
-        <li> IEEE Transaction on Reliability (TOR): 2024 </li>
-        <li> IEEE Transactions on Cloud Computing (TCC): 2023</li>
-        <li> IEEE ACCESS: 2023 </li>
-        <li> IEEE Transactions on Parallel and Distributed Systems (TPDS): 2023, 2024 </li>
-        <li> IEEE Transactions on Mobile Computing (TMC): 2023</li>
-        <li> IEEE Transactions on Knowledge and Data Engineering (TKDE): 2023</li>
-      </ul>
-      <hr>
-    </div>
-
-
-    <div class="container section" id="award">
-      <h2>Awards</h2>
-      <ul>
-        <li> 2023 Machine learning and System Rising Star </li>
-        <li> 2023 Google Cloud Innovator </li>
-        <li> 2020-22, Facebook Fellowship </li>
-        <li> 2018, AWS research grant </li>
-        <li> 2013, Emerson Fellowship </li>
-        <li> 2013, Best Thesis Award (5/3000) </li>
-        <li> 2012, "Person of the Year" Nomination </li>
-        <li> 2012, Third Place in Green Tech International Competition, Taiwan </li>
-        <li> 2009, First Award in National Chemistry Olympiad </li>
-      </ul>
-      <hr>
-    </div>
-
-    <div class="container section" id="talk">
-      <h2>Talks</h2>
-      <ul>
-        <li>
-          <span class="paper-name"> Simple Scalable Caching with Three Static FIFO Queues. </span>
-          <ul>
-            <li>[11/2023] WOS conference </li>
-            <li>[09/2023] VMware </li>
-            <li>[09/2023] Kuaishou </li>
-            <li>[09/2023] Microsoft Research Asia </li>
-            <li>[09/2023] Tsinghua University </li>
-            <li>[08/2023] Cloudflare </li>
-            <li>[08/2023] USTC </li>
-            <li>[07/2023] Alluxio </li>
-          </ul>
-        </li>
-        <li> <span class="paper-name"> LESSCache: LEarned Segment-Structured Cache</span>
-          <ul>
-            <li> [02/2023] Meta</li>
-            <li> [10/2022] VMware vSAN and VMware Research</li>
-          </ul>
-        </li>
-        <li> <span class="paper-name"> Ubiquitous Caching: A Journey of Building Efficient Distributed and Process
-            Caches. </span>
-          <ul>
-            <li> [10/2022] <a
-                href="https://qconsf.com/presentation/oct2022/ubiquitous-caching-journey-building-efficient-distributed-and-process-caches">
-                QCon SF
-              </a> </li>
-            <li> [08/2022] Alluxio </li>
-          </ul>
-        </li>
-        <li> <span class="paper-name"> Segcache: a memory-efficient and scalable in-memory key-value cache for small
-            objects</span>
-          <ul>
-            <li> [01/2023] Oracle </li>
-            <li> [2022] Shopify </li>
-          </ul>
-        </li>
-      </ul>
-      <hr>
-    </div>
-
-    <div class="container section" id="open-source">
-      <h2>Open-source Software & Data</h2>
-      <ul>
-        <li><a target="_blank" href="https://github.com/1a1a11a/libCacheSim"> Cache trace datasets </a></li>
-        <li><a target="_blank" href="https://github.com/1a1a11a/libCacheSim"> libCacheSim: a high-performance cache
-            library and simulator </a></li>
-        <!-- <li><a target="_blank" href="https://github.com/1a1a11a/PyMimircache"> PyMimircache: an open source cache
-            simulator </a></li> -->
-        <li><a target="_blank" href="https://github.com/1a1a11a/fastscp"> fastscp: a tool for transfering files with
-            two nodes </a>
-        </li>
-        <li><a target="_blank" href="https://github.com/1a1a11a/distComp"> distComp: a tool for running computation
-            jobs in parallel
-            on many nodes</a></li>
-      </ul>
-      <hr>
-    </div>
-
-    <div class="container section" id="bio">
-      <h2>Bio</h2>
-      <p>
-        Juncheng Yang is an Assistant Professor in the School of Engineering and Applied Science at Harvard University.
-        He received his Ph.D. in Computer Science from Carnegie Mellon University in 2024, His research interests
-        broadly cover the efficiency, performance, reliability, and sustainability of large-scale
-        data systems.
+  <!-- Footer -->
+  <footer class="bg-light text-center py-4 mt-5">
+    <div class="container">
+      <p class="text-muted mb-0">
+        <span>&copy; 2025 Juncheng Yang</span>
+        <span class="mx-2">|</span>
+        <span>Assistant Professor at Harvard University</span>
       </p>
-      <p>
-        Juncheng's works have received best paper awards at NSDI'24, NSDI'21, SOSP'21, and SYSTOR'16. His OSDI'20 paper
-        was recognized as one of the best storage papers at the conference and invited to ACM TOS'21. Juncheng received
-        a Facebook Ph.D. Fellowship in 2020, was recognized as a Rising Star in machine learning and systems in 2023,
-        and a Google Cloud Research Innovator in 2023.
-      </p>
-      <p>
-        His work, Segcache, has been adopted for production at Twitter and Momento. The two eviction algorithms he
-        designed (S3-FIFO, SIEVE) have been adopted for production at Google, VMware, Redpanda, and several others, with
-        over 20 open-source libraries available on GitHub.
-        Moreover, the open-source cache simulation library he created, libCacheSim, has been used by almost 100 research
-        institutes and companies.
-      </p>
-      <hr>
     </div>
+  </footer>
 
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 
-    <!-- <div class="container" id="sponsors">
-
-    </div> -->
-
-    <!-- <h2>Life</h2>
-        <a target="_blank" href="gallery/index.html">
-          I like to travel around, here is my photo gallery.
-        </a> -->
-
-
-
-  </div>
-
-
-  <div class="footer font-small text-center navbar-fixed-bottom">
-    <!-- <br><br> -->
-    <!-- <hr> -->
-    <p> <span class="text-muted">Juncheng Yang. 2019-2024 @ Pittsburgh.</span> </p>
-  </div>
-
-
-
-
-  <script>
-    show_secs(["intro", "news", "recruiting", "researchInterest", "researchHigh", "bio"]);
-  </script>
-
-
-
+  <!-- Analytics -->
   <!-- Cloudflare Web Analytics -->
   <script defer src='https://static.cloudflareinsights.com/beacon.min.js'
     data-cf-beacon='{"token": "73060116f5984852acd9226e1c20e0e0"}'></script>
   <!-- End Cloudflare Web Analytics -->
 
-
-  <!-- Start of StatCounter Code for Default Guide -->
+  <!-- StatCounter -->
   <script type="text/javascript">
     var sc_project = 10384898;
     var sc_invisible = 1;
@@ -878,9 +347,41 @@
     var scJsHost = (("https:" == document.location.protocol) ? "https://secure." : "http://www.");
     document.write("<sc" + "ript type='text/javascript' src='" + scJsHost + "statcounter.com/counter/counter.js'></" + "script>");
   </script>
-  <!-- End of StatCounter Code for Default Guide -->
+  <!-- End StatCounter -->
 
-
+  <!-- Structured Data for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Juncheng Yang",
+    "jobTitle": "Assistant Professor",
+    "affiliation": {
+      "@type": "Organization",
+      "name": "Harvard University",
+      "department": "School of Engineering and Applied Sciences"
+    },
+    "url": "https://junchengyang.com",
+    "email": "juncheng@seas.harvard.edu",
+    "image": "https://junchengyang.com/img/JunchengYang.jpg",
+    "sameAs": [
+      "https://scholar.google.com/citations?user=P8HaQPoAAAAJ",
+      "https://github.com/1a1a11a",
+      "https://www.linkedin.com/in/juncheng-yang-8b870661"
+    ],
+    "alumniOf": {
+      "@type": "Organization",
+      "name": "Carnegie Mellon University"
+    },
+    "knowsAbout": [
+      "Storage Systems",
+      "Data Management",
+      "Machine Learning Systems",
+      "Cache Management",
+      "Distributed Systems"
+    ]
+  }
+  </script>
 
 </body>
 
