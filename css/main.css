@@ -801,7 +801,7 @@ strong a:hover, b a:hover {
   outline-offset: 2px;
 }
 
-/* High contrast mode support */
+/* High contrast mode support 
 @media (prefers-contrast: high) {
   :root {
     --primary-color: #000000;
@@ -809,7 +809,7 @@ strong a:hover, b a:hover {
     --text-color: #000000;
     --border-color: #000000;
   }
-}
+}*/
 
 /* Reduced motion support */
 @media (prefers-reduced-motion: reduce) {
