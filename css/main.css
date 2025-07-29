@@ -820,37 +820,6 @@ strong a:hover, b a:hover {
   }
 }
 
-/* Dark mode support */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --primary-color: #ff6b6b;
-    --secondary-color: #4ecdc4;
-    --text-color: #ffffff;
-    --text-muted: #adb5bd;
-    --background-color: #1a1a1a;
-    --border-color: #333333;
-    --shadow-color: rgba(0, 0, 0, 0.3);
-  }
-  
-  .section {
-    background: #2a2a2a;
-  }
-  
-  .news-item,
-  .paper-li {
-    background: #333333;
-  }
-  
-  .alert-primary {
-    background: rgba(255, 107, 107, 0.1);
-  }
-  
-  code {
-    background: #333333;
-    color: #ff6b6b;
-  }
-}
-
 .top {
   padding-top: 40px;
 }
@@ -880,7 +849,7 @@ strong a:hover, b a:hover {
 .faq-question {
   font-size: 1.25rem;
   font-weight: 600;
-  color: var(--text-dark);
+  color: var(--text-color);
   margin-bottom: 1rem;
   display: flex;
   align-items: center;
