@@ -67,10 +67,10 @@ h1, h2, h3, h4, h5, h6 {
 .section-title {
   font-size: 1.75rem;
   font-weight: 600;
-  margin-bottom: 2rem;
+  margin-bottom: 0.8rem;
   color: var(--primary-color);
   position: relative;
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.8rem;
 }
 
 .section-title::after {
@@ -152,7 +152,7 @@ a:focus {
   padding: 1.5rem 0;
   background: linear-gradient(135deg, rgba(140, 21, 21, 0.05) 0%, rgba(0, 102, 204, 0.05) 100%);
   border-radius: var(--border-radius);
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .profile-image-container {
@@ -213,15 +213,12 @@ a:focus {
 
 /* Content Sections */
 .content-sections {
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 
 .section {
-  margin-bottom: 3rem;
-  padding: 1.25rem 2.5rem;
-  background: var(--background-color);
-  border-radius: var(--border-radius);
-  box-shadow: 0 2px 8px var(--shadow-color);
+  margin-bottom: 2rem;
+  padding: 0.5rem 0.8rem;
   display: block;
 }
 
@@ -231,7 +228,7 @@ a:focus {
 }
 
 .section-content p {
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.8rem;
 }
 
 .section-content strong {
@@ -398,7 +395,7 @@ strong a:hover, b a:hover {
 
 /* Section-specific styles */
 .research-areas li {
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.8rem;
 }
 
 .research-areas ul {
@@ -473,7 +470,7 @@ strong a:hover, b a:hover {
 }
 
 .service-category li {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.25rem;
 }
 
 .awards-list {
@@ -615,7 +612,7 @@ strong a:hover, b a:hover {
 }
 
 .section li {
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.375rem;
 }
 
 /* Enhanced button styling */
@@ -684,8 +681,8 @@ strong a:hover, b a:hover {
   }
   
   .section {
-    padding: 1rem 2rem;
-    margin-bottom: 2.5rem;
+    padding: 0.8rem;
+    margin-bottom: 0rem;
   }
   
   .hero-section {
@@ -744,7 +741,7 @@ strong a:hover, b a:hover {
   }
   
   .section {
-    padding: 1.5rem;
+    padding: 0;
   }
   
   .section-title {
@@ -762,7 +759,6 @@ strong a:hover, b a:hover {
   
   .section {
     display: block !important;
-    box-shadow: none;
     border: 1px solid #ccc;
     page-break-inside: avoid;
   }
@@ -833,8 +829,8 @@ strong a:hover, b a:hover {
 
 /* FAQ Styling */
 .faq-item {
-  margin-bottom: 2rem;
-  padding: 1.5rem;
+  margin-bottom: 2.4rem;
+  padding: 0.8rem;
   background: #f8f9fa;
   border-radius: var(--border-radius);
   border-left: 4px solid var(--primary-color);
@@ -849,7 +845,7 @@ strong a:hover, b a:hover {
 .faq-question {
   font-size: 1.25rem;
   font-weight: 600;
-  color: var(--text-color);
+  color: var(--text-dark);
   margin-bottom: 1rem;
   display: flex;
   align-items: center;
