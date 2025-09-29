@@ -45,6 +45,8 @@
     integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
     crossorigin="anonymous" referrerpolicy="no-referrer">
 
+  <script src="script/main.js"></script>
+
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
 
@@ -56,62 +58,7 @@
   <!-- Skip to main content link for accessibility -->
   <a href="#main-content" class="skip-link visually-hidden-focusable">Skip to main content</a>
 
-  <!-- Header with navigation -->
-  <header class="sticky-top bg-white shadow-sm">
-    <nav class="navbar navbar-expand-lg navbar-light" role="navigation" aria-label="Main navigation">
-      <div class="container">
-        <a class="navbar-brand" href="#intro">
-          <strong>Juncheng Yang</strong>
-        </a>
-
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#intro">
-                <i class="fas fa-home" aria-hidden="true"></i> About
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="students.html">
-                <i class="fas fa-user-graduate" aria-hidden="true"></i> Students
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="publications.html">
-                <i class="fas fa-file-text" aria-hidden="true"></i> Publications
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="teaching.html">
-                <i class="fas fa-chalkboard-teacher" aria-hidden="true"></i> Teaching
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="service.html">
-                <i class="fas fa-handshake" aria-hidden="true"></i> Service
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="open-source.html">
-                <i class="fab fa-github" aria-hidden="true"></i> Open Source
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://blog.jasony.me" target="_blank">
-                <i class="fas fa-blog" aria-hidden="true"></i> Blog
-                <span class="visually-hidden">(opens in new tab)</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
+  <div id="header"></div>
 
   <!-- Main content -->
   <main id="main-content" class="container mt-5" style="max-width: 1200px;">
@@ -127,8 +74,8 @@
         <div class="col-lg-8 col-md-7">
           <div class="hero-content">
             <h1 class="display-4 fw-bold mb-2">Juncheng Yang</h1>
-            <h4 class="h4 text-muted mb-3">Assistant Professor</h4>
-            <h5 class="h5 mb-4">Harvard John A. Paulson School of Engineering and Applied Sciences</h5>
+            <h2 class="h4 text-muted mb-3">Assistant Professor</h2>
+            <h3 class="h5 mb-4">Harvard John A. Paulson School of Engineering and Applied Sciences</h3>
 
             <div class="contact-info mb-4">
               <p class="mb-2">
@@ -145,15 +92,11 @@
               <a href="https://scholar.google.com/citations?user=P8HaQPoAAAAJ" target="_blank"
                 class="btn btn-outline-primary btn-sm me-2 mb-2">
                 <i class="ai ai-google-scholar" aria-hidden="true"></i> Google Scholar
+                <span class="visually-hidden">(opens in new tab)</span>
               </a>
-              <!-- <a href="https://github.com/1a1a11a" target="_blank" class="btn btn-outline-primary btn-sm me-2 mb-2">
-                <i class="fab fa-github" aria-hidden="true"></i> GitHub
-              </a> -->
-              <!-- <a href="https://www.linkedin.com/in/juncheng-yang-8b870661" target="_blank" class="btn btn-outline-primary btn-sm me-2 mb-2">
-                <i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn
-              </a> -->
               <a href="CV.pdf" target="_blank" class="btn btn-outline-secondary btn-sm mb-2">
                 <i class="fas fa-file-pdf" aria-hidden="true"></i> CV
+                <span class="visually-hidden">(opens in new tab)</span>
               </a>
             </div>
           </div>
@@ -199,8 +142,9 @@
                 and <a href="https://mlcommons.org/en/rising-stars-2023/" target="_blank">a 2023 Rising Star in Machine
                   Learning and Systems</a>.
               </p>
-
-
+              <!-- <p> I lead the Harvard System Measurements and Design Lab (MadSys Lab). Our research focuses on building
+                efficient, scalable, and robust systems for storage, data management, and machine learning.
+              </p> -->
             </div>
           </div>
         </div>
@@ -249,21 +193,13 @@
 
       <!-- Recruiting Section -->
       <section class="section" id="recruiting">
-        <!-- <div class="row"> -->
-        <!-- <div class="col-12"> -->
         <div class="alert alert-primary" role="alert">
-          <!-- <h3 class="alert-heading">
-                <i class="fas fa-users me-2" aria-hidden="true"></i>
-                Recruiting Students
-              </h3> -->
           <p class="mb-0">
             <strong>I am looking for highly motivated students to join my lab.</strong> <br>
             Please read <a href="faq.html" target="_blank" class="alert-link">this page</a>
             if you are interested in working with me or asking for a recommendation letter.
           </p>
         </div>
-        <!-- </div> -->
-        <!-- </div> -->
       </section>
 
       <!-- Research Interests Section -->
@@ -332,22 +268,19 @@
                     href="https://github.com/nixberg/sieve-swift" target="_blank">Swift</a>, <a
                     href="https://github.com/thelibrarian/sieve_cache" target="_blank">Ruby</a>, <a
                     href="https://github.com/lost22git/sieve_cache" target="_blank">Nim</a>, and <a
-                    href="https://github.com/tensorush/zig-sieve" target="_blank">Zig</a>. Find more details <a
-                    href="https://sieve-cache.com" target="_blank">here</a>.
+                    href="https://github.com/tensorush/zig-sieve" target="_blank">Zig</a>. Find more details on <a
+                    href="https://sieve-cache.com" target="_blank">SIEVE website</a>.
                 </li>
                 <li>
                   <strong>S3-FIFO (SOSP'23)</strong>: a simple and scalable cache eviction algorithm composed of only
                   FIFO queues. <strong>Implemented or deployed at companies</strong> including Google, VMware and <a
                     href="https://github.com/redpanda-data/redpanda/pull/14759" target="_blank">Redpanda</a>, and many
-                  open-source libraries. Find more details <a href="https://s3fifo.com" target="_blank">here</a>.
+                  open-source libraries. Find more details on<a href="https://s3fifo.com" target="_blank">S3-FIFO website</a>.
                 </li>
                 <li>
                   <strong>Segcache (NSDI'21)</strong>: received a <strong>community best-paper award, and deployed at
                     Twitter and Momento</strong>.
                 </li>
-                <!-- <div class="highlight-item">
-                  <strong>Kangaroo (SOSP'21)</strong> received a <strong>best-paper award</strong> at SOSP'21.
-                </div> -->
               </ul>
             </div>
           </div>
@@ -393,15 +326,7 @@
   </main>
 
   <!-- Footer -->
-  <footer class="bg-light text-center py-4 mt-5">
-    <div class="container">
-      <p class="text-muted mb-0">
-        <span>&copy; 2025 Juncheng Yang</span>
-        <span class="mx-2">|</span>
-        <span>Assistant Professor at Harvard University</span>
-      </p>
-    </div>
-  </footer>
+  <div id="footer"></div>
 
   <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -426,7 +351,7 @@
 
 
 
-  <script src="https://darkvisitors.com/tracker.js?project_key=f44cc202-a9fd-4825-879a-46a8d32b46d9"></script>
+  <script defer src="https://darkvisitors.com/tracker.js?project_key=f44cc202-a9fd-4825-879a-46a8d32b46d9"></script>
 
   <!-- Structured Data for SEO -->
   <script type="application/ld+json">
@@ -465,3 +390,6 @@
 </body>
 
 </html>
+
+
+
