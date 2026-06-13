@@ -443,22 +443,30 @@ strong a:hover, b a:hover {
 
 .paper-emphasis {
   display: block;
-  margin-top: 0.55rem;
-  padding: 0.45rem 0.65rem;
+  margin-top: 0.65rem;
+  padding: 0.55rem 0.65rem 0.55rem 0.85rem;
   color: #7a1f1f;
   font-weight: 500;
-  font-size: 0.9rem;
-  line-height: 1.45;
-  background: rgba(140, 21, 21, 0.06);
-  border-left: 3px solid rgba(140, 21, 21, 0.45);
+  font-size: 0.88rem;
+  line-height: 1.5;
+  background: linear-gradient(90deg, rgba(212, 160, 23, 0.12), rgba(212, 160, 23, 0.03));
+  border-left: 3px solid #d4a017;
   border-radius: var(--border-radius);
+}
+
+.paper-emphasis::before {
+  content: '\f005';
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+  color: #d4a017;
+  margin-right: 0.45rem;
 }
 
 .paper-name {
   font-weight: 700;
-  color: #202124;
-  font-size: 1rem;
-  line-height: 1.28;
+  color: #1a1c1f;
+  font-size: 1.06rem;
+  line-height: 1.32;
 }
 
 .paper-name:hover,
@@ -471,27 +479,47 @@ strong a:hover, b a:hover {
 
 .paper-li {
   position: relative;
-  margin-bottom: 0.65rem;
-  padding: 0.8rem 1rem;
+  margin-bottom: 0.85rem;
+  padding: 1rem 1.15rem;
   background: #ffffff;
   border: 1px solid #e8ecef;
-  border-left: 3px solid rgba(140, 21, 21, 0.72);
-  border-radius: var(--border-radius);
-  box-shadow: none;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(16, 24, 40, 0.04);
   transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+  overflow: hidden;
+}
+
+/* Accent bar that slides in on hover */
+.paper-li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: var(--primary-color);
+  transform: translateX(-4px);
+  transition: transform 0.2s ease;
 }
 
 .paper-li:hover {
-  border-color: rgba(140, 21, 21, 0.28);
-  border-left-color: var(--primary-color);
-  box-shadow: 0 4px 14px rgba(16, 24, 40, 0.06);
-  transform: translateY(-1px);
+  border-color: rgba(140, 21, 21, 0.25);
+  box-shadow: 0 8px 24px rgba(16, 24, 40, 0.1);
+  transform: translateY(-2px);
+}
+
+.paper-li:hover::before {
+  transform: translateX(0);
+}
+
+.paper-li:last-child {
+  margin-bottom: 0;
 }
 
 .paper-li p {
   margin-bottom: 0;
-  font-size: 0.93rem;
-  line-height: 1.5;
+  font-size: 0.92rem;
+  line-height: 1.55;
   color: #42464d;
 }
 
@@ -505,15 +533,18 @@ strong a:hover, b a:hover {
 .paper-li strong {
   display: inline-flex;
   align-items: center;
-  min-height: 1.25rem;
-  padding: 0.02rem 0.35rem;
-  color: var(--primary-color);
-  background: rgba(140, 21, 21, 0.08);
-  border: 1px solid rgba(140, 21, 21, 0.16);
-  border-radius: 999px;
-  font-size: 0.78rem;
+  min-height: 1.3rem;
+  padding: 0.05rem 0.5rem;
+  color: #fff;
+  background: var(--primary-color);
+  border: none;
+  border-radius: 0.3rem;
+  font-size: 0.74rem;
+  font-weight: 700;
   font-style: normal;
-  letter-spacing: 0;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  vertical-align: middle;
 }
 
 .paper-li a:not(.paper-name):not(.scholar-link) {
@@ -573,44 +604,53 @@ strong a:hover, b a:hover {
 }
 
 .publications-list {
-  margin-top: 0.9rem;
+  margin-top: 1.5rem;
 }
 
 .year-group {
-  margin-bottom: 0.25rem;
+  margin-bottom: 1.75rem;
+}
+
+.year-group:last-child {
+  margin-bottom: 0;
 }
 
 .year-label {
-  font-size: 0.82rem;
-  font-weight: 700;
-  color: var(--text-muted);
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  padding: 0.4rem 0 0.35rem;
-  margin-top: 1.2rem;
-  margin-bottom: 0.5rem;
-  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: var(--primary-color);
+  letter-spacing: 0.02em;
+  margin: 0 0 0.85rem;
+  line-height: 1;
 }
 
-.year-group:first-child .year-label {
-  margin-top: 0;
+.year-label::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, var(--border-color), transparent);
 }
 
 .paper-link {
   display: inline-flex;
   align-items: center;
-  padding: 0.05rem 0.42rem;
-  margin: 0 0.08rem;
-  font-size: 0.75rem;
-  font-weight: 600;
+  padding: 0.08rem 0.5rem;
+  margin: 0 0.12rem 0.15rem 0;
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: lowercase;
   color: var(--secondary-color);
-  background: rgba(0, 102, 204, 0.07);
-  border: 1px solid rgba(0, 102, 204, 0.22);
-  border-radius: 999px;
+  background: rgba(0, 102, 204, 0.08);
+  border: 1px solid rgba(0, 102, 204, 0.2);
+  border-radius: 0.3rem;
   text-decoration: none;
   transition: all 0.15s ease;
   vertical-align: middle;
-  line-height: 1.4;
+  line-height: 1.5;
 }
 
 .paper-link:hover,
@@ -619,6 +659,7 @@ strong a:hover, b a:hover {
   background: var(--secondary-color);
   border-color: var(--secondary-color);
   border-bottom-color: var(--secondary-color);
+  transform: translateY(-1px);
 }
 
 .service-categories {
@@ -891,10 +932,14 @@ strong a:hover, b a:hover {
     padding: 0.25rem 0.6rem;
   }
 
-  .paper-li {
-    padding: 0.75rem 0.85rem;
+  .year-label {
+    font-size: 1rem;
   }
-  
+
+  .paper-li {
+    padding: 0.8rem 0.9rem;
+  }
+
   .section {
     padding: 0;
     margin-bottom: 1.4rem;
