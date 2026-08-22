@@ -462,6 +462,10 @@ strong a:hover, b a:hover {
   margin-right: 0.45rem;
 }
 
+.paper-emphasis.award::before {
+  content: '\f091';
+}
+
 .paper-name {
   font-weight: 700;
   color: #1a1c1f;

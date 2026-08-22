@@ -8,7 +8,7 @@
 
   <!-- Enhanced meta tags for SEO -->
   <meta name="description"
-    content="Open-source software and data by Juncheng Yang - libCacheSim, distComp, and other tools for systems research." />
+    content="Open-source software and data by Juncheng Yang - libCacheSim, cache trace datasets, and other tools for systems research." />
   <meta name="keywords" content="Juncheng Yang, Open Source, libCacheSim, GitHub, Software, Tools, Research" />
   <meta name="author" content="Juncheng Yang" />
   <meta name="robots" content="index, follow" />
@@ -69,7 +69,7 @@
                     <span class="open-source-subtitle">High-performance cache library and simulator</span>
                   </div>
                   <p class="open-source-description">
-                    A high-performance, open-source C++ library designed to simulate and analyze cache systems efficiently. 
+                    A high-performance, open-source C++ library designed to simulate and analyze cache systems efficiently.
                     It provides a flexible framework for exploring cache design choices and evaluating their impact on performance.
                     Used by almost 100 research institutes and companies worldwide.
                   </p>
@@ -78,15 +78,57 @@
                 <div class="open-source-item">
                   <div class="open-source-header">
                     <i class="fab fa-github me-2" aria-hidden="true"></i>
-                    <a href="https://github.com/1a1a11a/distComp" target="_blank" class="open-source-title">
-                      distComp
+                    <a href="https://github.com/HarvardMadSys/RouteWise" target="_blank" class="open-source-title">
+                      RouteWise
                     </a>
-                    <span class="open-source-subtitle">DRAM-usage-agnostic distributed computing tool</span>
+                    <span class="open-source-subtitle">Latency-cost optimization for multi-provider LLM routing</span>
                   </div>
                   <p class="open-source-description">
-                    An open-source tool that enables parallel execution of computation jobs across a cluster of servers, 
-                    effectively managing resources to prevent out-of-memory (OOM) errors. The main benefit is running 
-                    as many jobs as possible simultaneously, improving resource utilization and faster job completion times.
+                    An open-source LLM router that optimizes latency and cost across multiple LLM providers,
+                    from our EuroSys'27 paper. Available on
+                    <a href="https://pypi.org/project/llm-routewise/" target="_blank">PyPI</a> as <code>llm-routewise</code>.
+                  </p>
+                </div>
+
+                <div class="open-source-item">
+                  <div class="open-source-header">
+                    <i class="fas fa-database me-2" aria-hidden="true"></i>
+                    <a href="https://github.com/1a1a11a/libCacheSim" target="_blank" class="open-source-title">
+                      Cache trace datasets
+                    </a>
+                    <span class="open-source-subtitle">Production cache traces for research</span>
+                  </div>
+                  <p class="open-source-description">
+                    A large collection of open-source cache traces from production systems, including the
+                    <a href="https://github.com/twitter/cache-trace" target="_blank">Twitter production cache traces</a>
+                    from our OSDI'20 measurement study. Widely used in cache research and evaluation.
+                  </p>
+                </div>
+
+                <div class="open-source-item">
+                  <div class="open-source-header">
+                    <i class="fas fa-database me-2" aria-hidden="true"></i>
+                    <a href="https://arxiv.org/abs/2608.13573" target="_blank" class="open-source-title">
+                      LLM serving trace dataset
+                    </a>
+                    <span class="open-source-subtitle">One year of production LLM serving traces</span>
+                  </div>
+                  <p class="open-source-description">
+                    A year-long production LLM serving trace collected from Chutes, spanning many models and users,
+                    supporting research on workload evolution, caching, and load balancing in LLM serving.
+                  </p>
+                </div>
+
+                <div class="open-source-item">
+                  <div class="open-source-header">
+                    <i class="fab fa-github me-2" aria-hidden="true"></i>
+                    <a href="https://github.com/1a1a11a/fastscp" target="_blank" class="open-source-title">
+                      fastscp
+                    </a>
+                    <span class="open-source-subtitle">Fast file transfer tool</span>
+                  </div>
+                  <p class="open-source-description">
+                    An open-source tool for transferring files between two nodes with high throughput.
                   </p>
                 </div>
               </div>
