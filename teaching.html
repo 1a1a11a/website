@@ -38,7 +38,7 @@
   <script src="script/main.js"></script>
   
   <!-- Favicon -->
-  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 
   <title>Teaching - Juncheng Yang</title>
 </head>
@@ -59,10 +59,13 @@
           <div class="col-12">
             <h1 class="section-title">Teaching</h1>
             <div class="section-content">
+              <p class="course-lead">I teach graduate courses on computer systems at Harvard SEAS. Slides, assignments,
+                and schedules live on each course website.</p>
+
               <div class="course-grid">
                 <div class="course-item">
                   <div class="course-header">
-                    <i class="fas fa-robot me-2" aria-hidden="true"></i>
+                    <i class="fas fa-robot" aria-hidden="true"></i>
                     <a href="https://cs2680.com" target="_blank" class="course-title">
                       CS2680 Modern AI Systems: Agents and System Optimizations
                     </a>
@@ -72,20 +75,26 @@
                   <p class="course-description">
                     This course follows one AI system from the agent loop down to the GPU. Students start by using
                     agent frameworks, then build their own, measure performance, and optimize on top of rental APIs.
-                    They then deploy open-source models themselves and work through the underlying systems layers:
-                    GPU architecture and Triton kernels, attention optimization, batching and scheduling, KV-cache
-                    management, routing, quantization, and speculative decoding. Throughout, the emphasis is on
-                    defining success metrics, accounting for every token and second, and measuring improvements at
-                    each layer.
-                    <br>
-                    <em>Prerequisites: at least one of CS61, CS1610, or CS2620; proficiency in Python and
-                      PyTorch.</em>
+                    They then deploy open-source models themselves and work through the underlying systems layers,
+                    with an emphasis on defining success metrics, accounting for every token and second, and measuring
+                    improvements at each layer.
                   </p>
+                  <div class="course-facts">
+                    <div>
+                      <span class="course-fact-label">Topics</span>
+                      agents, GPU and Triton kernels, attention optimization, batching and scheduling, KV-cache
+                      management, quantization, speculative decoding
+                    </div>
+                    <div>
+                      <span class="course-fact-label">Prerequisites</span>
+                      at least one of CS61, CS1610, or CS2620; proficiency in Python and PyTorch
+                    </div>
+                  </div>
                 </div>
 
                 <div class="course-item">
                   <div class="course-header">
-                    <i class="fas fa-hard-drive me-2" aria-hidden="true"></i>
+                    <i class="fas fa-hard-drive" aria-hidden="true"></i>
                     <a href="https://modernComputerStorage.com" target="_blank" class="course-title">
                       CS2640 Modern Computer Storage Systems
                     </a>
@@ -93,16 +102,23 @@
                       LL2.223</span>
                   </div>
                   <p class="course-description">
-                    A comprehensive examination of both the hardware and software components of modern computer
-                    storage systems, covering the layered architecture from individual disks and SSDs to block
-                    storage, file systems, and distributed storage systems, with an emphasis on efficiency,
-                    performance, and reliability. Topics include caching, RAID and data protection, machine learning
-                    for storage, and storage for machine learning workloads. The first half is lecture-based; the
-                    second half features student paper presentations, discussions, and guest lectures from industry
-                    experts.
-                    <br>
-                    <em>Prerequisites: at least one of CS61, CS1610, or CS2620.</em>
+                    A comprehensive examination of both the hardware and software components of modern computer storage
+                    systems, covering the layered architecture from individual disks and SSDs to block storage, file
+                    systems, and distributed storage systems, with an emphasis on efficiency, performance, and
+                    reliability. The first half is lecture-based; the second half features student paper presentations
+                    and guest lectures from industry experts.
                   </p>
+                  <div class="course-facts">
+                    <div>
+                      <span class="course-fact-label">Topics</span>
+                      HDDs and SSDs, block storage, file systems, distributed storage, caching, RAID and data
+                      protection, machine learning and storage
+                    </div>
+                    <div>
+                      <span class="course-fact-label">Prerequisites</span>
+                      at least one of CS61, CS1610, or CS2620
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
