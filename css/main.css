@@ -347,6 +347,7 @@ main.mt-5 {
 .scholar-link {
   display: inline-flex;
   align-items: center;
+  gap: 0.4rem;
   min-height: 2rem;
   margin: 0 !important;
   padding: 0.28rem 0.62rem;
@@ -402,7 +403,6 @@ main.mt-5 {
   font-size: 0.82rem;
   font-variant-numeric: tabular-nums;
   font-weight: 600;
-  white-space: nowrap;
 }
 
 .news-content {
@@ -470,6 +470,10 @@ main.mt-5 {
   margin-top: 1rem;
 }
 
+.award-icon {
+  color: #c58900;
+}
+
 .research-highlights li,
 .highlight-item {
   margin-bottom: 0.8rem;
@@ -495,8 +499,6 @@ main.mt-5 {
   border-radius: 0;
 }
 
-.student-category h3,
-.service-category h3,
 .talk-item h4 {
   margin: 1.7rem 0 0.8rem;
   padding-bottom: 0.4rem;
@@ -506,13 +508,19 @@ main.mt-5 {
   font-weight: 600;
 }
 
+.service-categories > .service-category:first-child > h3 {
+  margin-top: 1.3rem;
+}
+
 .student-category h4 {
-  margin: 1.4rem 0 0.7rem;
-  color: var(--muted);
-  font-size: 0.9rem;
+  margin: 1.2rem 0 0.5rem;
+  color: var(--ink);
+  font-size: 0.95rem;
   font-weight: 600;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
+}
+
+.student-category h3 + h4 {
+  margin-top: 0;
 }
 
 .awards-list {
@@ -684,17 +692,22 @@ main.mt-5 {
 }
 
 .paper-emphasis.award::before {
-  content: "★";
+  content: "\f091";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
 }
 
 /* Open source and teaching */
 #open-source .open-source-lead,
-#teaching .course-lead {
+#teaching .course-lead,
+#student .student-lead {
   margin-bottom: 1.3rem;
   color: var(--muted);
 }
 
-#open-source .section-content > h3 {
+#open-source .section-content > h3,
+.student-category h3,
+.service-category h3 {
   display: flex;
   align-items: center;
   gap: 0.75rem;
@@ -706,7 +719,9 @@ main.mt-5 {
   text-transform: uppercase;
 }
 
-#open-source .section-content > h3::after {
+#open-source .section-content > h3::after,
+.student-category h3::after,
+.service-category h3::after {
   content: "";
   flex: 1;
   height: 1px;
